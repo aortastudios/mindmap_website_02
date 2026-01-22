@@ -1,6 +1,6 @@
 Mindmap 🧠
 A modern mental health app built with Next.js, TailwindCSS, TypeScript, Zustand, and Sanity.
-📖 Overview
+
 Mindmap is a web application designed to provide accessible mental health resources and content. It features a clean, responsive interface and a structured set of pages to help users learn, connect, and engage with mental health topics.
 
 

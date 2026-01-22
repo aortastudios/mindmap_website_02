@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme {
+  --font-bricolage: var(--font-bricolage), sans-serif;
+  --font-lato: var(--font-lato), sans-serif;
+
+  /*  Custom breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  /* colors */
+  --color-primary-100: #0a5e8d;
+  --color-primary-200: #27272e;
+  --color-tertiary-100: #8359d8;
+}
+
+/* Apply defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: var(--font-bricolage), sans-serif;
+}
+.bricolage {
+  font-family: var(--font-bricolage), sans-serif;
+}
+.latoclass {
+  font-family: var(--font-lato), sans-serif;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--font-lato), sans-serif;
+}
+
+.home {
+  background-color: #f6f6f6;
+}
+
+.waitlist-btn {
+  box-shadow:
+    inset 0 0.75px 0.75px 0 rgba(255, 255, 255, 0.3),
+    /* light inner shadow */ inset 0 -1px 1px 0 rgba(0, 0, 0, 0.3); /* dark inner shadow */
+}
