@@ -13,7 +13,7 @@ const OurFeatures = () => {
               <div className="mt-5 lg:mt-4">
                 <FeatureButton
                   title="Our Features"
-                  className=" border border-primary-100 rounded-4xl font-medium  text-[10px] lg:text-base px-4 lg:px-6 py-2 text-primary-100"
+                  className=" border border-primary-100/32 rounded-4xl font-medium  text-[10px] lg:text-base px-4 lg:px-6 py-2 text-primary-100"
                 />
               </div>
               <div className="py-5 text-primary-100">

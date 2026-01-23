@@ -5,12 +5,13 @@ import "./globals.css";
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "700"],
 });
 
 const lato = Lato({
   variable: "--font-lato",
   subsets: ["latin"],
-  weight: "100",
+  weight: ["100", "300", "400", "700"],
 });
 
 export const metadata: Metadata = {

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SanctuaryCards = () => {
   return (
-    <section className="w-full h-full pt-10">
+    <div className="w-full h-full pt-10">
       <div className="w-full h-full flex flex-col lg:flex-row justify-center gap-6 ">
         {/* first card */}
         <div className="bg-blue-100 h-168 flex flex-col justify-between rounded-[20px] overflow-hidden ">
@@ -25,13 +25,14 @@ const SanctuaryCards = () => {
         {/* second card */}
         <div className="flex-1 flex flex-col gap-6  h-full   ">
           <div className=" bg-primary-100 h-95.5 flex flex-col justify-between rounded-[20px] overflow-hidden ">
-            <h2 className="text-white h-20 font-semibold text-[32px] px-5 pt-8">
+            <h2 className="text-white h-20 font-semibold text-[24px] lg:text-[32px] px-2 lg:px-5 pt-12 lg:pt-8">
               Access Anywhere around the Globe
             </h2>
             <div className=" w-full lg:w-100.5 h-50  rounded-[20px] p-3 relative">
               <Image src={"/images/globe.png"} fill alt="Globe" className="" />
             </div>
           </div>
+          {/* third */}
 
           <div className="relative  bg-primary-100 w-full  lg:w-100.5  h-68 flex flex-col justify-between rounded-[20px] overflow-hidden ">
             <Image
@@ -42,12 +43,13 @@ const SanctuaryCards = () => {
             />
           </div>
         </div>
-        {/* third card */}
+        {/* fourth card */}
         <div className="flex-1 flex flex-col gap-6  h-full relative  ">
           <div className="relative  bg-primary-100 w-full  lg:w-100.5  h-70.25 flex flex-col justify-between rounded-[20px] overflow-hidden ">
             <Image src={"/images/phone.png"} fill alt="Phone" className="" />
           </div>
 
+          {/* fifth card */}
           <div className=" flex-1 pb-8 lg:pb-0">
             <div className=" bg-primary-100 h-93 flex flex-col justify-between rounded-[20px] overflow-hidden relative ">
               <h2 className="text-white h-20 font-semibold text-[32px] px-5 pt-8">
@@ -65,7 +67,7 @@ const SanctuaryCards = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

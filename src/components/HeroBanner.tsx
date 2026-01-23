@@ -19,7 +19,7 @@ const HeroBanner = () => {
                 <span className=" ">A quiet space for a</span>
                 <span className="">loud mind</span>
               </h1>
-              <p className="text-white font-medium text-2xl flex flex-col items-center mt-8 ">
+              <p className="text-white font-medium text-2xl flex flex-col items-center mt-8  ">
                 <span className="">
                   Track your moods, reflect daily, and build habits that
                   actually stay
@@ -31,7 +31,7 @@ const HeroBanner = () => {
             </div>
             <div className="w-full flex justify-center pt-5 ">
               <div className="w-126.5 h-13.5 flex items-center gap-6">
-                <ReflectingButton className="flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
+                <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
                 <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md    font-semibold text-[#ffffff] rounded-full" />
               </div>
             </div>
@@ -71,7 +71,7 @@ const HeroBanner = () => {
               stay with you, without pressure, noise or doubt.
             </p>
             <div className="flex flex-col items-center gap-3 mt-12">
-              <ReflectingButton className="flex items-center justify-center gap-2 w-full  h-13  z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
+              <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full  h-13  z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
               <WaitlistButton className="waitlist-btn flex items-center justify-center w-full backdrop-blur-md  h-13  z-10  bg-white/20 border-t border-t-gray-200 border-r border-r-gray-200 shadow-md   font-semibold text-white rounded-full" />
             </div>
           </div>
