@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Lato } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -24,7 +25,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${bricolage.variable} ${lato.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
