@@ -23,7 +23,7 @@ const FrequentQuestions = () => {
                 services and mental health support.
               </p>
             </div>
-            <div className="hidden lg:block w-full  lg:h-130 relative ">
+            <div className="hidden lg:block w-full  lg:h-130 relative lg:mt-12">
               <Image
                 src={"/icons/question_icon.svg"}
                 fill

@@ -14,7 +14,7 @@ const FeatureCard = () => {
               className=" object-cover"
             />
           </div>
-          <div className="flex-1  pt-10">
+          <div className="flex-1 text-primary-200 pt-10">
             <h2 className="font-semibold  text-xl lg:text-[30px] leading-tight latoclass ">
               MindSense: AI Copilot & Proactive Care System
             </h2>
@@ -34,13 +34,13 @@ const FeatureCard = () => {
           <h1 className="font-semibold text-[30px] mt-10 pt-3 leading-tight latoclass  ">
             Information Hub (Learn)
           </h1>
-          <p className=" text-sm  mt-8 lg:hidden ">
+          <p className=" text-sm  mt-8 lg:hidden text-shadow-primary-200">
             User&apos;s go-to place for easy-to-understand, reliable mental
             health information, serving as a foundational resource within the
             MindMap ecosystem
           </p>
 
-          <p className="hidden lg:block text-[18px] mt-4">
+          <p className="hidden lg:block text-[18px] mt-4 text-primary-200">
             User&apos;s go-to place for easy-to-understand, reliable mental health
             information, serving as a foundational resource within the MindMap
             ecosystem
