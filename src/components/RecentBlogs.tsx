@@ -1,6 +1,7 @@
 import Container from "./Container";
 import NewsLetter from "./NewsLetter";
 import BlogCard from "./BlogCard";
+import MentalStateCard from "./MentalStateCard";
 
 const RecentBlogs = () => {
   return (
@@ -39,6 +40,17 @@ const RecentBlogs = () => {
               text="Emotions often follow patterns we don’t notice until we pause to reflect. By paying attention to recurring feelings and triggers, you gain insight into your emoti"
             />
           </div>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-between gap-6 mt-10 ">
+          <MentalStateCard
+            src="/images/cognitive.png"
+            text="Cognitive Wellness"
+          />
+          <MentalStateCard
+            src="/images/regulation.png"
+            text="Emotional Regulation"
+          />
+          <MentalStateCard src="/images/rest.png" text="Rest and Recovery" />
         </div>
       </Container>
     </section>
