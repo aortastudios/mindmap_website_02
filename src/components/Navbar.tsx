@@ -9,7 +9,7 @@ const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
 
   return (
-    <header className="fixed lg:relative top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50">
+    <header className="fixed lg:relative top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50" id="home">
       {/* desktop */}
       <div className="hidden max-w-310 w-full h-20  lg:flex items-center justify-center py-4.5">
         <div className="w-full flex ">

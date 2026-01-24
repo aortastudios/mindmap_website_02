@@ -79,7 +79,7 @@ const Download = () => {
                 <DownloadButton
                   path="#"
                   name="Download for Android"
-                  iconClass="text-primary-300 text-[16px]"
+                  iconClass="text-primary-200 text-[16px]"
                   className2="p-2 rounded-full bg-[#111111]/8"
                   className="latoclass mt-8 flex items-center justify-center gap-2 w-67 h-14 z-10 bg-white text-primary-100  text-[18px] lg:text-xl font-medium rounded-full "
                 />
@@ -165,7 +165,7 @@ const Download = () => {
                 <DownloadButton
                   path="#"
                   name="Download for Android"
-                  iconClass="text-primary-300 text-[14px]"
+                  iconClass="text-primary-200 text-[14px]"
                   className2="p-4 rounded-full bg-[#111111]/8"
                   className="latoclass mt-8 flex items-center  justify-between pl-5 px-2 gap-2 w-62.25 h-14 z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-medium rounded-full "
                 />

@@ -5,7 +5,7 @@ const SanctuaryCards = () => {
     <div className="w-full h-full pt-10">
       <div className=" h-full flex flex-col lg:flex-row justify-center gap-6 ">
         {/* first card */}
-        <div className=" flex-1 bg-blue-100 w-full h-168 flex flex-col justify-between rounded-[20px] overflow-hidden ">
+        <div className=" lg:flex-1 bg-blue-100 w-full h-168 flex flex-col justify-between rounded-[20px] overflow-hidden ">
           <div className="text-primary-100 h-20 font-semibold text-[32px] px-5 pt-8">
             <h2 className="">Journal Entry</h2>{" "}
             <p className="text-[16px] font-semibold mt-2">

@@ -1,4 +1,10 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-lato), sans-serif;
+}
 
 @theme {
   --font-bricolage: var(--font-bricolage), sans-serif;
@@ -38,10 +44,6 @@ a {
 button,
 a {
   cursor: pointer;
-}
-
-body {
-  font-family: var(--font-lato), sans-serif;
 }
 
 .home,
