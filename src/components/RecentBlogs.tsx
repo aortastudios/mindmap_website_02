@@ -30,7 +30,7 @@ const RecentBlogs = () => {
             <BlogCard
               src="/images/patterns.png"
               text1="Mindfulness"
-              bg1="bg-[#CFDF3]"
+              bg1="bg-[#ECFDF3]"
               textColor1="text-[#027A48]"
               text2="Mental Health"
               bg2="bg-[#FDF2FA]"
