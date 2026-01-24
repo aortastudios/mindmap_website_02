@@ -80,9 +80,7 @@ const FeatureCard = () => {
           <p className="hidden lg:block text-[18px] mt-4">
             A proactive AI that learns from a user&apos;s data to offer
             personalized insights and detect early signs of distress, acting as
-            a personal safety net. Operates as both a distinct dashboard for
-            holistic insights and safety net management, and as an integrated AI
-            assistant within features like Journaling
+            a personal safety net. 
           </p>
         </div>
 
