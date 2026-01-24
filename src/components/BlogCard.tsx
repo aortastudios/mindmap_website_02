@@ -15,7 +15,7 @@ const BlogCard = ({
   src
 }: BlogCardProp) => {
   return (
-    <div className="w- h-full lg:h-50 flex flex-col md:flex-row gap-4">
+    <div className="w- h-full lg:h-50 flex flex-col lg:flex-row gap-4">
       <div className="w-full h-50 lg:w-80 lg:h-full  rounded-[20px] relative">
         <Image src={src} fill alt="image" />
       </div>
