@@ -4,25 +4,35 @@ import Image from "next/image";
 import Link from "next/link";
 import WaitlistButton from "./WaitListButton";
 import { useUiStore } from "@/store/uiStore";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
+  const specialRoutes = ["/", "/about"];
+  const pathname = usePathname();
+  // Check if current route is one of the special ones
+  const isSpecial = specialRoutes.includes(pathname);
+
+  // Decide logo + text color
+  const logo = isSpecial ? "/icons/logo.png" : "/icons/blue_logo.png";
+  const logoText = isSpecial
+    ? "/icons/logo_text.png"
+    : "/icons/blue_logo_text.png";
+  const textColor = isSpecial ? "text-white" : "text-primary-200";
 
   return (
-    <header className="fixed lg:relative top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50" id="home">
+    <header
+      className="fixed lg:relative top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50"
+      id="home"
+    >
       {/* desktop */}
       <div className="hidden max-w-310 w-full h-20  lg:flex items-center justify-center py-4.5">
         <div className="w-full flex ">
           {/* logo */}
-          <div className=" flex-1 flex items-center gap-2">
-            <Image src={"/icons/logo.png"} width={32} height={32} alt="Logo" />
-            <Image
-              src={"/icons/logo_text.png"}
-              width={122}
-              height={27}
-              alt="Site_name"
-            />
-          </div>
+          <Link href={'/'} className=" flex-1 flex items-center gap-2">
+            <Image src={logo} width={32} height={32} alt="Logo" />
+            <Image src={logoText} width={122} height={27} alt="Site_name" />
+          </Link>
 
           <div className=" flex-1 flex items-center  justify-end gap-8">
             <nav className="">
@@ -30,7 +40,7 @@ const Navbar = () => {
               <div className="">
                 <ul className="flex items-center gap-8 font-semibold">
                   {deskTopNavLinks.map((link) => (
-                    <li key={link.name} className="text-white">
+                    <li key={link.name} className={textColor}>
                       <Link href={link.path}>{link.name}</Link>
                     </li>
                   ))}
@@ -52,7 +62,7 @@ const Navbar = () => {
                 height={24}
                 alt="footer_icon"
               />
-               <Image
+              <Image
                 src="/icons/mobile_logo_text.png"
                 width={87}
                 height={21}
@@ -62,7 +72,7 @@ const Navbar = () => {
           </div>
           <div
             onClick={toggleMobileNav}
-            className="flex-1 flex justify-end cursor-pointer z-50" 
+            className="flex-1 flex justify-end cursor-pointer z-50"
           >
             {isMobileNavOpen ? (
               <Image

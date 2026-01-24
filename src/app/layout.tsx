@@ -25,6 +25,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${bricolage.variable} ${lato.variable}`}>
+      <head>
+        <link rel="icon" href="/icons/blue_logo.png" type="image/webp" />
+      </head>
       <body className="antialiased">
         {children}
         <Footer />

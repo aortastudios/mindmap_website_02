@@ -17,12 +17,12 @@ const Testimonials = () => {
           lives through therapy and holistic wellness.
         </p>
       </div>
-      <div className="w-full h-full mt-20 hidden lg:block  ">
-        <TestimonialSlider testimonials={dummyTestimonial1} />
-        <TestimonialSlider testimonials={dummyTestimonial2} />
-      </div>
-      <div className="lg:hidden block mt-10">
-        <Container>
+      <Container>
+        <div className="w-full h-full mt-20 hidden lg:block  ">
+          <TestimonialSlider testimonials={dummyTestimonial1} />
+          <TestimonialSlider testimonials={dummyTestimonial2} />
+        </div>
+        <div className="lg:hidden block mt-10">
           <div className="w-full">
             {combinedTestimonials.map((testimonial) => (
               <div key={testimonial.id} className="mb-6">
@@ -34,8 +34,9 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
+
       <div className="w-full flex justify-center ">
         <ReflectingButton
           path="/testimonials"
