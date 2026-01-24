@@ -62,7 +62,7 @@ export const resources = [
 ];
 
 export const company = [
-  { name: " Blog", path: navPaths.home },
+  { name: " Blog", path: navPaths.blog },
   { name: "Career", path: navPaths.about },
   { name: "Terms Of Use", path: navPaths.terms },
 ];

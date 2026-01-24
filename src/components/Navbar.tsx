@@ -26,7 +26,7 @@ const Navbar = () => {
       id="home"
     >
       {/* desktop */}
-      <div className="hidden max-w-310 w-full h-20  lg:flex items-center justify-center py-4.5">
+      <div className="hidden max-w-310 w-full h-20 px-5 lg:flex items-center justify-center py-4.5">
         <div className="w-full flex ">
           {/* logo */}
           <Link href={'/'} className=" flex-1 flex items-center gap-2">
