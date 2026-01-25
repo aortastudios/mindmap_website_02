@@ -2,7 +2,7 @@ export const navPaths = {
   home: "/",
   about: "/about",
   contact: "/contact",
-  careers: "/careers",
+  careers: "/career",
   services: "/services",
   resources: "/resources",
   waitlist: "/wait-list",
@@ -14,6 +14,7 @@ export const navPaths = {
   linkedin: "#",
   terms: "/terms-of-use",
   privacy: "/privacy-policy",
+  faqs: "/faqs",
 };
 export const deskTopNavLinks = [
   {
@@ -63,8 +64,9 @@ export const resources = [
 
 export const company = [
   { name: " Blog", path: navPaths.blog },
-  { name: "Career", path: navPaths.about },
+  { name: "Career", path: navPaths.careers },
   { name: "Terms Of Use", path: navPaths.terms },
+  { name: "FAQS", path: navPaths.faqs },
 ];
 
 export const socialLink = [

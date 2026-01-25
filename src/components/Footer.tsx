@@ -111,9 +111,9 @@ const Footer = () => {
               </div>
             </div>
             {/* for desktop */}
-            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-20 hidden lg:block "></div>
+            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-12 hidden lg:block "></div>
             {/* for mobile */}
-            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-10 "></div>
+            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-10 lg:hidden "></div>
 
             <div className="lg:hidden w-[90%] lg:w-auto  max-w-298 mx-auto ">
               <div className="mt-20">
@@ -131,6 +131,22 @@ const Footer = () => {
             </div>
             {/* for desktop */}
             <div className=" h-px max-w-298 mx-auto bg-white/20 mt-10  hidden lg:block"></div>
+            <div className="text-white hidden lg:flex max-w-298 mx-auto w-[90%] lg:w-auto mt-1  items-center justify-between">
+              <div className="">
+                <p className="text-[18px] font-normal text-white/70 ">
+                  © {new Date().getFullYear()} MindMap. All rights reserved.
+                </p>
+              </div>
+              <div className="">
+                <ul className="flex items-center justify-center gap-2 my-3">
+                  {footerLink.map((link) => (
+                    <li key={link.name} className="text-[18px] text-white/70">
+                      <Link href={link.path}>{link.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </Container>
       </div>

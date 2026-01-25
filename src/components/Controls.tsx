@@ -10,7 +10,7 @@ const Controls = () => {
           width={82}
           height={20}
           alt="previous_button"
-          className="w-18.5 h-5 lg:w-20.5 lg:h-5"
+          className="w-18.5 h-5 lg:w-20.5 lg:h-5 object-contain"
         />
       </div>
       <div className="flex gap-0.5 text-[#667085] pt-5">
@@ -42,7 +42,7 @@ const Controls = () => {
           width={82}
           height={20}
           alt="next_button"
-          className="w-18.5 h-5 lg:w-20.5 lg:h-5"
+          className="w-18.5 h-5 lg:w-20.5 lg:h-5 object-contain"
         />
       </div>
     </div>

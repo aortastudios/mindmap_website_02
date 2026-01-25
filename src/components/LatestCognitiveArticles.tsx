@@ -21,7 +21,7 @@ const LatestCognitiveArticles = () => {
                 <p className={`text-[14px] font-semibold text-[#6941C6]`}>
                   Olivia Rhye • 1 Jan 2024
                 </p>
-                <p className=" flex items-center justify-between font-semibold text-[24px] text-primary-200 py-2">
+                <p className=" flex items-center justify-between font-semibold text-base lg:text-[24px] text-primary-200 py-2">
                   <span className="">
                     Incorporating daily journaling for self reflection
                   </span>{" "}
