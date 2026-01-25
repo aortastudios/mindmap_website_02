@@ -1,4 +1,5 @@
 import BlogSearch from "@/components/BlogSearch";
+import LatestArticles from "@/components/LatestArticles";
 import Navbar from "@/components/Navbar";
 import RecentBlogs from "@/components/RecentBlogs";
 
@@ -8,6 +9,7 @@ const Blog = () => {
       <Navbar />
       <BlogSearch />
       <RecentBlogs />
+      <LatestArticles />
     </main>
   );
 };

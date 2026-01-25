@@ -16,8 +16,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Mindmap",
-  description: "A mental health app",
+  title: "Mindmap - A mental health app",
+  description: "A mental health app that solves mental health issues in the society",
 };
 
 export default function RootLayout({
