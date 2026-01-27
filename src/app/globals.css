@@ -40,6 +40,12 @@ a {
 .latoclass {
   font-family: var(--font-lato), sans-serif;
 }
+.career-form h1 {
+  font-family: var(--font-lato), sans-serif;
+}
+.career-form input {
+  background-color: #f4f4f4;
+}
 
 button,
 a {
@@ -48,7 +54,9 @@ a {
 
 .home,
 .contact,
+.career,
 .blog,
+.terms,
 .footer {
   background-color: #f6f6f6;
 }

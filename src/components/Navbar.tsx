@@ -94,7 +94,7 @@ const Navbar = () => {
         <nav
           className={` ${
             isMobileNavOpen ? "left-0 right-0" : "-left-full"
-          } absolute  top-0  h-screen flex flex-col space-y-10  px-8 bg-white z-40`}
+          } absolute  top-0  h-screen flex flex-col space-y-10  px-8 bg-white z-40 transition-all duration-700 ease-in-out`}
         >
           <ul className="flex  flex-col space-y-8 mt-20 pt-10">
             {mobileNavLinks.map((link) => (

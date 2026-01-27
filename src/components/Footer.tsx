@@ -7,9 +7,9 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-full footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden">
+    <footer className="w-full h-full  footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden">
       <div
-        className="relative w-full  h-215 max-w-360 mx-auto 
+        className="relative w-full  h-215  mx-auto 
                       bg-[url('/images/footer.png')] bg-cover bg-no-repeat"
       >
         {/* Overlay for the dark background on 27% width */}

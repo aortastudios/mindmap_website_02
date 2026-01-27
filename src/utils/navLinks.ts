@@ -12,7 +12,7 @@ export const navPaths = {
   facebook: "#",
   twitter: "#",
   linkedin: "#",
-  terms: "/terms-of-use",
+  terms: "/terms",
   privacy: "/privacy-policy",
   faqs: "/faqs",
 };
