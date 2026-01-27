@@ -3,7 +3,7 @@ import Image from "next/image";
 const SanctuaryCards = () => {
   return (
     <div className="w-full h-full pt-10">
-      <div className=" h-full flex flex-col lg:flex-row justify-center gap-6 ">
+      <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
         {/* first card */}
         <div className=" lg:flex-1 bg-blue-100 w-full h-168 flex flex-col justify-between rounded-[20px] overflow-hidden ">
           <div className="text-primary-100 h-20 font-semibold text-[32px] px-5 pt-8">
@@ -18,7 +18,7 @@ const SanctuaryCards = () => {
               src={"/images/journal.png"}
               fill
               alt="Journal"
-              className=""
+              className="object-contain xl:object-cover"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@ const SanctuaryCards = () => {
           </div>
 
           {/* fifth card */}
-          <div className=" flex-1 pb-8 lg:pb-0">
+          <div className=" flex-1 pb-8 lg:pb-0 block md:hidden lg:block">
             <div className=" bg-primary-100 h-93 w-full flex flex-col justify-between rounded-[20px] overflow-hidden relative ">
               <h2 className="text-white h-20 font-semibold text-[32px] px-5 pt-8">
                 Your daily check-in

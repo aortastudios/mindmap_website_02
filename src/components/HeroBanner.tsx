@@ -61,18 +61,18 @@ const HeroBanner = () => {
           </div>
           <div className=" h-full mt-6 ">
             <div className="">
-              <h1 className="text-[24px] sm:text-[28px] font-extrabold text-white flex flex-col items-center">
+              <h1 className="text-[24px] sm:text-[28px] md:text-4xl font-extrabold text-white flex flex-col items-center">
                 <span className=" ">A quiet space for a</span>
                 <span className="">loud mind</span>
               </h1>
             </div>
-            <p className=" text-center font-medium text-[16px] text-white mt-4">
+            <p className=" text-center font-medium text-[16px] md:text-[24px] text-white mt-4 md:px-4">
               Track your moods, reflect daily, and build habits that actually
               stay with you, without pressure, noise or doubt.
             </p>
             <div className="flex flex-col items-center gap-3 mt-12">
-              <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full  h-13  z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
-              <WaitlistButton className="waitlist-btn flex items-center justify-center w-full backdrop-blur-md  h-13  z-10  bg-white/20 border-t border-t-gray-200 border-r border-r-gray-200 shadow-md   font-semibold text-white rounded-full" />
+              <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full md:w-[60%] lg:w-full  h-13  z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
+              <WaitlistButton className="waitlist-btn flex items-center justify-center w-full md:w-[60%] lg:w-full backdrop-blur-md  h-13  z-10  bg-white/20 border-t border-t-gray-200 border-r border-r-gray-200 shadow-md   font-semibold text-white rounded-full" />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Sanctuary = () => {
                 A sanctuary for your thoughts
               </h1>
             </div>
-            <div className="flex-1 font-medium text-[14px] lg:text-[22px] text-primary-100 leading-tight  pt-5">
+            <div className="flex-1 font-medium text-[14px] md:text-[22px] text-primary-100 leading-tight  pt-5">
               <p className="text-center lg:text-end">In a world of constant noise,</p>
               <p className="text-center lg:text-end">
                 we offer a gentle space for reflection and growth

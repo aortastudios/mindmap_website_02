@@ -2,9 +2,9 @@ import Image from "next/image";
 const divStyle = "absolute bottom-0 right-0 w-11.5 h-11.5 lg:w-20.5 lg:h-20.5";
 const FeatureCard = () => {
   return (
-    <div className="w-full h-full flex flex-col lg:flex-row justify-center gap-6 ">
+    <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6   ">
       {/* first card */}
-      <div className="flex-1 bg-gray-100 text-primary-200  h-full rounded-4xl">
+      <div className="flex-1 bg-gray-100  text-primary-200  h-full rounded-4xl">
         <div className="m-5 h-full ">
           <div className="w-full lg:w-77.5 h-60.25 bg-white rounded-lg relative">
             <Image
@@ -68,8 +68,8 @@ const FeatureCard = () => {
         </div>
       </div>
       {/* third card */}
-      <div className="flex-1 flex flex-col gap-6  h-full relative  ">
-        <div className="bg-[#FBF7D4] text-[#726915] h-77.5 lg:h-103.5 rounded-2xl p-3">
+      <div className="flex-1 flex flex-col gap-6  h-full relative   ">
+        <div className="bg-[#FBF7D4] text-[#726915] h-77.5 lg:h-103.5 rounded-2xl p-3  md:hidden lg:block">
           <h1 className="font-semibold text-[30px] mt-10 pt-3 leading-tight latoclass ">
             Community and Events
           </h1>

@@ -13,7 +13,8 @@ export const navPaths = {
   twitter: "#",
   linkedin: "#",
   terms: "/terms",
-  privacy: "/privacy-policy",
+  cookies:"/cookies",
+  privacy: "/privacy",
   faqs: "/faqs",
 };
 export const deskTopNavLinks = [
@@ -67,6 +68,10 @@ export const company = [
   { name: "Career", path: navPaths.careers },
   { name: "Terms Of Use", path: navPaths.terms },
   { name: "FAQS", path: navPaths.faqs },
+  { name: "Cookies", path: navPaths.cookies },
+
+
+  
 ];
 
 export const socialLink = [

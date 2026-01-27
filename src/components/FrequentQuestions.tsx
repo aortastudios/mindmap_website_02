@@ -18,7 +18,7 @@ const FrequentQuestions = () => {
               <h1 className=" text-center lg:text-start text-xl lg:text-[52px] w-full font-semibold leading-tight lg:font-bold pb-5">
                 Frequently Asked Questions
               </h1>
-              <p className="text-[12px] text-center lg:text-start lg:text-[22px] pb-5 px-5 lg:px-0 lg:pr-10 leading-tight">
+              <p className="text-[12px] md:text-lg text-center lg:text-start lg:text-[22px] pb-5 px-5 lg:px-0 lg:pr-10 leading-tight">
                 Get clear answers to frequently asked questions regarding our
                 services and mental health support.
               </p>

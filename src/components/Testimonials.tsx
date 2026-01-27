@@ -12,7 +12,7 @@ const Testimonials = () => {
         <h1 className="px-10 lg:px-0 text-center lg:text-start text-primary-100 font-bold lg:font-semibold text-[24px] lg:text-[44px] leading-tight">
           What our community members are saying
         </h1>
-        <p className="font-[400px] text-[14px] lg:text-[22px]text-primary-100 lg:px-30 text-center text-primary-100 mt-2 px-5 ">
+        <p className="font-[400px] text-[14px] md:text-base lg:text-[22px]  lg:px-30 text-center text-primary-100 mt-2 px-5 ">
           Explore inspiring feedback from individuals who transformed their
           lives through therapy and holistic wellness.
         </p>
@@ -23,7 +23,7 @@ const Testimonials = () => {
           <TestimonialSlider testimonials={dummyTestimonial2} />
         </div>
         <div className="lg:hidden block mt-10">
-          <div className="w-full">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
             {combinedTestimonials.map((testimonial) => (
               <div key={testimonial.id} className="mb-6">
                 <TestimonialCard

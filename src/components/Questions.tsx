@@ -20,7 +20,7 @@ const Questions = ({ question, answer }: QuestionProp) => {
         className="w-full flex justify-between px-5 lg:px-10 items-center h-20 lg:h-23"
       >
         <span
-          className={`text-[12px] ${isOpen ? "font-semibold" : "font-medium"} lg:text-xl text-primary-100`}
+          className={`text-[12px] md:text-lg ${isOpen ? "font-semibold" : "font-medium"} lg:text-xl text-primary-100`}
         >
           {question}
         </span>
@@ -43,7 +43,7 @@ const Questions = ({ question, answer }: QuestionProp) => {
         }`}
       >
         <div className="h-5 w-0.5 lg:w-1 bg-primary-100 absolute top-2 left-2.5 lg:left-6 "></div>
-        <div className="px-5 lg:px-10 pb-4 text-sm lg:text-base text-primary-100 leading-8">
+        <div className="px-5 lg:px-10 pb-4 text-sm md:text-base text-primary-100 leading-8">
           {answer}
         </div>
       </div>

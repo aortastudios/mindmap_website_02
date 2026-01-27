@@ -17,12 +17,13 @@ const Community = () => {
             </p>
           </div>
 
-          <div className="mt-12  relative hidden lg:block">
+          <div className="mt-12  relative hidden lg:block items-center ">
             <Image
               src={"/images/community_img.png"}
-              width={1101}
-              height={825}
+              width={860}
+              height={640}
               alt="coomunity_banner"
+              className="mx-auto"
             />
             <button className="absolute top-1/2 right-[4%] h-13.5 w-13.5 bg-primary-100 flex items-center justify-center rounded-full">
               <FaArrowRightLong className="text-white w-5 h-[14.12px]" />

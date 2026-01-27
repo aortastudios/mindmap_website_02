@@ -8,7 +8,7 @@ const ContactForm = () => {
         <div className="w-full h-150.25 flex items-center gap-6">
           <div className="flex-1 h-full ">
             {/* Desktop */}
-            <form className=" relative hidden lg:block w-full h-full rounded-[30px] text-primary-200 bg-white p-8 border border-[#B1B1B1] ">
+            <form className=" relative hidden lg:block w-full h-full rounded-[30px] text-primary-200 bg-white p-8  border-none ">
               {/* name */}
               <div className="w-full flex items-center gap-6 h-20  mb-5 ">
                 <div className=" flex-1 h-full">
@@ -67,7 +67,7 @@ const ContactForm = () => {
               </div>
             </form>
             {/* mobile */}
-            <form className="lg:hidden h-150 w-full text-primary-100 p-5 rounded-4xl border border-[#B1B1B1]">
+            <form className="lg:hidden h-150 w-full text-primary-100 p-5 rounded-4xl border-none bg-white ">
               {/* name */}
               <div className=" ">
                 <h1 className="text-[13px] font-semibold py-3">First name</h1>
@@ -75,7 +75,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     placeholder="Ex. John"
-                    className="w-full h-full p-2  rounded-xl bg-white placeholder:text-[#B2B2B2] placeholder:text-[12px]"
+                    className="w-full h-full p-2  rounded-xl bg-[#EEEEEE] placeholder:text-[#B2B2B2] placeholder:text-[12px]"
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     placeholder="Ex. Alex"
-                    className="w-full h-full p-2  rounded-xl bg-white placeholder:text-[#B2B2B2] placeholder:text-[12px]"
+                    className="w-full h-full p-2  rounded-xl bg-[#EEEEEE] placeholder:text-[#B2B2B2] placeholder:text-[12px]"
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     placeholder="Ex. john@gmail.com"
-                    className="w-full h-full p-2  rounded-xl bg-white placeholder:text-[#B2B2B2] placeholder:text-[12px]"
+                    className="w-full h-full p-2  rounded-xl bg-[#EEEEEE] placeholder:text-[#B2B2B2] placeholder:text-[12px]"
                   />
                 </div>
               </div>
