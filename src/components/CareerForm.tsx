@@ -22,7 +22,7 @@ const CareerForm = () => {
         <div className="w-full h-213  flex items-center gap-6 ">
           <div className=" flex-1 h-full ">
             {/* Desktop */}
-            <form className=" relative hidden lg:block w-full h-full rounded-[30px] overflow-hidden  text-primary-200 bg-white p-10 border border-[#B1B1B1] ">
+            <form className=" relative hidden lg:block w-full h-full rounded-[30px] overflow-hidden  text-primary-200 bg-white p-10 border-none ">
               {/* name */}
               <div className="w-full flex items-center gap-6 h-20 mt-2  mb-3">
                 <div className=" flex-1 h-full">
@@ -138,7 +138,7 @@ const CareerForm = () => {
               </div>
             </form>
             {/* mobile */}
-            <form className="lg:hidden h-full w-full text-primary-200 p-5 rounded-4xl border border-[#B1B1B1] bg-white">
+            <form className="lg:hidden h-full w-full text-primary-200 p-5 rounded-4xl border-none bg-white">
               {/* first name */}
               <div className=" py-2 mt-3">
                 <h1 className="text-[13px] font-semibold py-1">First name</h1>
