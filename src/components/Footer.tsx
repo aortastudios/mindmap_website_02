@@ -13,7 +13,7 @@ const Footer = () => {
                       bg-[url('/images/footer.png')] bg-cover bg-no-repeat"
       >
         {/* Overlay for the dark background on 27% width */}
-        <div className="hidden lg:block absolute top-0 left-0 w-[27%] h-full bg-[#27272E] z-0"></div>
+        <div className="hidden lg:block absolute top-0 left-0 w-[40%] h-full bg-[#000000] z-0"></div>
 
         {/* Content sits above both backgrounds */}
         <Container>

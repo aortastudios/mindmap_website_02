@@ -12,7 +12,7 @@ const Questions = ({ question, answer }: QuestionProp) => {
 
   return (
     <div
-      className={`rounded-3xl bg-white shadow w-full  ${isOpen ? " h-80.5" : "h-auto"}`}
+      className={`rounded-3xl bg-white shadow w-full  ${isOpen ? " lg:h-60 h-65" : "h-auto"}`}
     >
       {/* Question row */}
       <div
@@ -38,8 +38,8 @@ const Questions = ({ question, answer }: QuestionProp) => {
 
       {/* Answer */}
       <div
-        className={`overflow-hidden transition-all duration-700 ease-in-out flex gap-2 relative ${
-          isOpen ? "max-h-37.25 mt-5" : "max-h-0"
+        className={`overflow-hidden transition-all duration-700 ease-in-out  flex gap-2 relative ${
+          isOpen ? "max-h-37.25 " : "max-h-0"
         }`}
       >
         <div className="h-5 w-0.5 lg:w-1 bg-primary-100 absolute top-2 left-2.5 lg:left-6 "></div>

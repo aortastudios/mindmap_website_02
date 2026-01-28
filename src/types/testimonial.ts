@@ -3,6 +3,7 @@ export type Testimonial = {
   name: string;
   content: string;
   src: string;
+  title?: string;
 };
 
 export interface TestimonialCardProp {
