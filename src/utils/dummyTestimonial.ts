@@ -51,15 +51,14 @@ export const dummyTestimonial2 = [
 ];
 
 export const testimonials: Testimonial[] = [
- 
   {
     name: "Lucas Timothy",
     title: "Mind Mapper",
     content:
-      "The daily reflections and reminders keep me grounded. It doesn’t me. The prompts help me reflect without overthinking, and I’ve  feel pushy — just supportive when I need it. Always recommend!",
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
     src: "/images/lucas.png",
   },
-   {
+  {
     name: "Billy Hillary",
     title: "Mind Mapper",
     content: "Navi feel more equipped than ever to handle my emotions!",
@@ -69,7 +68,7 @@ export const testimonials: Testimonial[] = [
     name: "Belinda Walsh",
     title: "Mind Mapper",
     content:
-      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions.",
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking.",
     src: "/images/belinda.png",
   },
   {
@@ -82,15 +81,14 @@ export const testimonials: Testimonial[] = [
   {
     name: "Billy Hillary",
     title: "Mind Mapper",
-    content:
-      "Navigating the search for a therapist with MindMap was y sessions have transformed my outlook and I now feel more equipped than ever to handle my emotions!",
+    content: "Navi feel more equipped than ever to handle my emotions!",
     src: "/images/billy.png",
   },
   {
     name: "Lucas Timothy",
     title: "Mind Mapper",
     content:
-      "The daily reflections and reminders keep me g when I need it. Always recommend!",
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
     src: "/images/lucas.png",
   },
   {
@@ -111,7 +109,7 @@ export const testimonials: Testimonial[] = [
     name: "Lucas Timothy",
     title: "Mind Mapper",
     content:
-      "The daily reflections and reminders keep me g when I need it. Always recommend!",
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
     src: "/images/lucas.png",
   },
   {
@@ -125,7 +123,54 @@ export const testimonials: Testimonial[] = [
     name: "Lucas Timothy",
     title: "Mind Mapper",
     content:
-      "The daily reflections and reminders keep me grounded. It doesn’t me. The prompts help me reflect without overthinking, and I’ve  feel pushy — just supportive when I need it. Always recommend!",
+      "The prompts help me reflect without overthinking, and I’ve  feel pushy — just supportive when I need it. Always recommend!",
+    src: "/images/lucas.png",
+  },
+  {
+    name: "Belinda Walsh",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking.",
+    src: "/images/belinda.png",
+  },
+  {
+    name: "Lucas Timothy",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
+    src: "/images/lucas.png",
+  },
+  {
+    name: "Billy Hillary",
+    title: "Mind Mapper",
+    content: "Navi feel more equipped than ever to handle my emotions!",
+    src: "/images/billy.png",
+  },
+  {
+    name: "Belinda Walsh",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking.",
+    src: "/images/belinda.png",
+  },
+  {
+    name: "Billy Hillary",
+    title: "Mind Mapper",
+    content:
+      "Navigating the search for a therapist with MindMap was y sessions have transformed my outlook and I now feel more equipped than ever to handle my emotions!",
+    src: "/images/billy.png",
+  },
+  {
+    name: "Billy Hillary",
+    title: "Mind Mapper",
+    content: "Navi feel more equipped than ever to handle my emotions!",
+    src: "/images/billy.png",
+  },
+  {
+    name: "Lucas Timothy",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
     src: "/images/lucas.png",
   },
   {
@@ -133,6 +178,41 @@ export const testimonials: Testimonial[] = [
     title: "Mind Mapper",
     content:
       "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions.",
+    src: "/images/belinda.png",
+  },
+  {
+    name: "Billy Hillary",
+    title: "Mind Mapper",
+    content:
+      "Navigating the search for a therapist with MindMap was y sessions have transformed my outlook and I now feel more equipped than ever to handle my emotions!",
+    src: "/images/billy.png",
+  },
+  {
+    name: "Lucas Timothy",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions",
+    src: "/images/lucas.png",
+  },
+  {
+    name: "Belinda Walsh",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking, and I’ve become more aware of my emotions.",
+    src: "/images/belinda.png",
+  },
+  {
+    name: "Lucas Timothy",
+    title: "Mind Mapper",
+    content:
+      "The prompts help me reflect without overthinking, and I’ve  feel pushy — just supportive when I need it. Always recommend!",
+    src: "/images/lucas.png",
+  },
+  {
+    name: "Belinda Walsh",
+    title: "Mind Mapper",
+    content:
+      "Using MindMap made journaling feel natural for me. The prompts help me reflect without overthinking.",
     src: "/images/belinda.png",
   },
 ];

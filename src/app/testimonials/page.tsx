@@ -9,7 +9,9 @@ const Testimonials = () => {
       <Navbar />
       <CommunityHeader />
       <TestimonialsMasonry />
-      <Download />
+      <div className="my-12 lg:mt-10 w-full">
+        <Download />
+      </div>
     </main>
   );
 };
