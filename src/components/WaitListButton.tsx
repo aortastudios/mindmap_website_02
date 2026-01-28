@@ -3,7 +3,7 @@ import React from "react";
 
 const WaitlistButton = ({ className }: { className: string }) => {
   return (
-    <Link href="/wait-list" className={className}>
+    <Link href="/career" className={className}>
       Join Our Waitlist
     </Link>
   );

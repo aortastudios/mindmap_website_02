@@ -39,7 +39,7 @@ const Questions = ({ question, answer }: QuestionProp) => {
       {/* Answer */}
       <div
         className={`overflow-hidden transition-all duration-700 ease-in-out  flex gap-2 relative ${
-          isOpen ? "max-h-37.25 " : "max-h-0"
+          isOpen ? "max-h-38 " : "max-h-0"
         }`}
       >
         <div className="h-5 w-0.5 lg:w-1 bg-primary-100 absolute top-2 left-2.5 lg:left-6 "></div>

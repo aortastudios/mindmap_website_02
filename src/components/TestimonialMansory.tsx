@@ -21,6 +21,7 @@ const TestimonialsMasonry: React.FC = () => {
     if (increment < testimonials.length - 1) {
       setIncreament((prev) => (prev += 3));
     }
+    return
   };
   return (
     <section className=" lg:py-12">
