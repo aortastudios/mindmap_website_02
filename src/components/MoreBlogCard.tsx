@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BlogCategoryTag from "./BlogCategoryTag";
+import { IoArrowForwardSharp } from "react-icons/io5";
 
 const MoreBlogCard = () => {
   return (
@@ -12,16 +13,8 @@ const MoreBlogCard = () => {
           Olivia Rhye • 1 Jan 2024
         </p>
         <p className=" flex items-center justify-between font-semibold text-base lg:text-[24px] text-primary-200 py-2">
-          <span className="">
-            Incorporating daily journaling 
-          </span>{" "}
-          <Image
-            src={"/icons/icon_wrap.png"}
-            width={24}
-            height={28}
-            alt="forward icon"
-            className="w-6"
-          />
+          <span className="">Incorporating daily journaling</span>{" "}
+          <IoArrowForwardSharp className="w-6 transform -rotate-45" />
         </p>{" "}
         <p className="line-clamp-2 text-[#667085] pb-2">
           Daily journaling is one of the simplest ways to create space for
