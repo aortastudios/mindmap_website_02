@@ -3,6 +3,7 @@ import BlogCategoryTag from "./BlogCategoryTag";
 import Container from "./Container";
 import BlogCard from "./BlogCard";
 import Controls from "./Controls";
+import { IoArrowForwardSharp } from "react-icons/io5";
 
 const LatestCognitiveArticles = () => {
   return (
@@ -25,13 +26,7 @@ const LatestCognitiveArticles = () => {
                   <span className="">
                     Incorporating daily journaling for self reflection
                   </span>{" "}
-                  <Image
-                    src={"/icons/icon_wrap.png"}
-                    width={24}
-                    height={28}
-                    alt="forward icon"
-                    className="w-6"
-                  />
+                  <IoArrowForwardSharp className="w-6 transform -rotate-45" />
                 </p>{" "}
                 <p className="line-clamp-2 text-[#667085] pb-2">
                   Daily journaling is one of the simplest ways to create space
