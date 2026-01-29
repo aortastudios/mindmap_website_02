@@ -77,6 +77,8 @@ const HeroBanner = () => {
           </div>
         </div>
       </Container>
+
+      {/* backdrop overlay at the bottom of the banner */}
            <div className="absolute  left-0 w-full bottom-0 h-40 bg-linear-to-t from-[#FBF4EF] to-transparent backdrop-blur-xs "></div>
 
     </section>

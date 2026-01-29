@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="w-full min-h-screen bg-[url('/images/about_bg.png')] bg-no-repeat bg-cover h-full pb-10 lg:pb-0 lg:h-525.25">
+    <section className="relative w-full min-h-screen bg-[url('/images/about_bg.png')] bg-no-repeat bg-cover h-full pb-10 lg:pb-0 lg:h-525.25">
       <Navbar />
-      <div className="w-full">
+      <div className="w-full ">
         <Container>
           <div className="w-full h-full">
             <div className="w-full pt-35 lg:pt-10 ">
@@ -62,6 +62,7 @@ const AboutHero = () => {
           </div>
         </Container>
       </div>
+      <div className="absolute left-0 w-full bottom-0 h-10 lg:h-99.25 bg-linear-to-t from-[#FFFFFF] via-[#5E4738]/90 to-[#FFFFFF]/0.5 backdrop-blur-xs "></div>
     </section>
   );
 };
