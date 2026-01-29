@@ -14,7 +14,7 @@ const RecentBlogs = () => {
           {/* subscription section */}
           <NewsLetter />
           {/* right side with blog cards */}
-          <div className="wrapper flex-1 flex flex-col gap-6 lg:gap-4 h-110">
+          <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-110">
             <BlogCard
               src="/images/clarity.png"
               text1="Wellness"

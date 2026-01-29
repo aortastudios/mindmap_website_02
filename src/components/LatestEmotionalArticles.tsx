@@ -13,9 +13,9 @@ const LatestEmotionalArticles = () => {
           <h1 className=" font-bold lg:font-semibold text-[24px] lg:text-[26px] text-primary-100 mb-5">
             Latest Emotional Regulation articles
           </h1>
-          <div className="w-full h-full lg:h-108  flex flex-col lg:flex-row gap-6">
+          <div className="w-full h-full xl:h-108  flex flex-col xl:flex-row gap-6">
             <div className=" h-full flex-1 ">
-              <div className="upper-div h-50 lg:h-[50%] w-full  rounded-[20px] relative">
+              <div className="upper-div h-50 sm:h-100  xl:h-50 w-full  rounded-[20px] relative">
                 <Image src={"/images/wellness.png"} alt="Wellness_image" fill />
               </div>
               <div className="lower-div h-[50%] w-full  pt-10">
@@ -53,7 +53,7 @@ const LatestEmotionalArticles = () => {
               </div>
             </div>
             <div className=" h-full flex-1 ">
-              <div className="wrapper flex-1 flex flex-col gap-6 lg:gap-4 h-full lg:h-110">
+              <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-full lg:h-110">
                 <BlogCard
                   src="/images/clarity.png"
                   text1="Wellness"
@@ -89,8 +89,8 @@ const LatestEmotionalArticles = () => {
           </div>
         </div>
         <div className="w-full h-full lg:h-76.5 lg:bg-white rounded-[20px] mt-4 flex lg:px-5 items-center flex-col lg:flex-row gap-4">
-          <div className=" h-48.25 lg:h-61.5 w-full  lg:flex-1 flex items-center justify-center rounded-[20px] relative">
-            <Image src={"/images/pattern.png"} fill alt="Pattern_image" />
+          <div className=" h-48.25 sm:h-100 lg:h-61.5 w-full  lg:flex-1 flex items-center justify-center rounded-[20px] relative">
+            <Image src={"/images/pattern.png"} fill alt="Pattern_image" className="" />
           </div>
           <div className=" flex-1 ">
             <div className="lower-div h-61.5 w-full   ">

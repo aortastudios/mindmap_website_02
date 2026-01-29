@@ -13,10 +13,10 @@ const LatestCognitiveArticles = () => {
           <h1 className=" font-bold lg:font-semibold text-[24px] lg:text-[26px] text-primary-100 mb-5">
             Latest Cognitive Wellness articles
           </h1>
-          <div className="w-full h-full lg:h-108  flex flex-col lg:flex-row gap-6">
-            <div className=" h-full flex-1 ">
-              <div className="upper-div h-50 lg:h-[50%] w-full  rounded-[20px] relative">
-                <Image src={"/images/wellness.png"} alt="Wellness_image" fill  className="object-contain"/>
+          <div className="w-full h-full xl:h-108  flex flex-col xl:flex-row gap-6 ">
+            <div className=" h-full flex-1  ">
+              <div className="upper-div h-50 sm:h-100  xl:h-50 w-full  rounded-[20px] overflow-hidden relative ">
+                <Image src={"/images/wellness.png"} alt="Wellness_image" fill  className="object-cover"/>
               </div>
               <div className="lower-div h-[50%] w-full  pt-10">
                 <p className={`text-[14px] font-semibold text-[#6941C6]`}>
@@ -53,7 +53,7 @@ const LatestCognitiveArticles = () => {
               </div>
             </div>
             <div className=" h-full flex-1 ">
-              <div className="wrapper flex-1 flex flex-col gap-6 lg:gap-4 h-full lg:h-110">
+              <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-full lg:h-110">
                 <BlogCard
                   src="/images/clarity.png"
                   text1="Wellness"
