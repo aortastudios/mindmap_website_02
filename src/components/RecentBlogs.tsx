@@ -41,7 +41,7 @@ const RecentBlogs = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between gap-6 mt-10 ">
+        <div className="flex flex-col lg:flex-row justify-between gap-4 mt-10 ">
           <MentalStateCard
             src="/images/cognitive.png"
             text="Cognitive Wellness"

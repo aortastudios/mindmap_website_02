@@ -16,7 +16,7 @@ const LatestCognitiveArticles = () => {
           <div className="w-full h-full lg:h-108  flex flex-col lg:flex-row gap-6">
             <div className=" h-full flex-1 ">
               <div className="upper-div h-50 lg:h-[50%] w-full  rounded-[20px] relative">
-                <Image src={"/images/wellness.png"} alt="Wellness_image" fill />
+                <Image src={"/images/wellness.png"} alt="Wellness_image" fill  className="object-contain"/>
               </div>
               <div className="lower-div h-[50%] w-full  pt-10">
                 <p className={`text-[14px] font-semibold text-[#6941C6]`}>
