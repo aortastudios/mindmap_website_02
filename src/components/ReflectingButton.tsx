@@ -5,25 +5,25 @@ const ReflectingButton = ({
   className,
   className2,
   name,
-  path
+  path,
 }: {
   className: string;
   className2?: string;
   name: string;
-  path:string
+  path: string;
 }) => {
   return (
     <Link href={path} className={className}>
       <span className="">{name}</span>
       <span className={className2}>
         <Image
-          src={"/icons/chevrons-right.png"}
+          src={"/icons/chevrons-blue.png"}
           width={20}
           height={20}
-          alt="chevron_right_icon"
+          alt="chevron_blue_icon"
           className="group-hover:hidden block"
         />
-         <Image
+        <Image
           src={"/icons/chevrons-white.png"}
           width={20}
           height={20}
