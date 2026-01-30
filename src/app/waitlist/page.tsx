@@ -62,7 +62,7 @@ const WaitList = () => {
               <input
                 type="email"
                 placeholder="Ex. jone@example.com"
-                className=" py-2 rounded-lg w-[60%] text-black placeholder:text-[#B2B2B2] text-[14px]"
+                className=" py-2 rounded-lg w-[60%] text-black placeholder:text-[#B2B2B2] text-[14px] outline-none"
               />
               <button className="bg-primary-100 text-[#F8FAFC] px-3 text-base lg:px-6 py-1 lg:py-2 rounded-xl font-semibold">
                 Join now
