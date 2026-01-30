@@ -68,3 +68,13 @@ a {
     inset 0 0.75px 0.75px 0 rgba(255, 255, 255, 0.3),
     /* light inner shadow */ inset 0 -1px 1px 0 rgba(0, 0, 0, 0.3); /* dark inner shadow */
 }
+
+/* To rotate acccordion button for FAQS */
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(90deg); }
+}
+
+.animate-rotate-once {
+  animation: rotate360 0.5s linear; /* adjust duration */
+}

@@ -7,7 +7,7 @@ const AboutHero = () => {
   return (
     <section className="relative w-full min-h-screen bg-[url('/images/about_bg.png')] bg-no-repeat bg-cover h-full pb-10 lg:pb-0 lg:h-525.25">
       <Navbar />
-      <div className="w-full ">
+      <div className="w-full  h-full pb-20 m lg:pt-40">
         <Container>
           <div className="w-full h-full">
             <div className="w-full pt-35 lg:pt-10 ">

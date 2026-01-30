@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const BlogSearch = () => {
   return (
-    <section className="w-full h-full mt-4  pt-40 lg:pt-0">
+    <section className="w-full h-full mt-4  pt-30">
       <Container>
         <div className="text-primary-100">
           <h1 className=" text-[24px] lg:text-[52px] font-bold lg:font-semibold">

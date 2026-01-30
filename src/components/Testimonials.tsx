@@ -41,8 +41,8 @@ const Testimonials = () => {
         <ReflectingButton
           path="/testimonials"
           name="Read More Testimonials"
-          className2="bg-primary-100/5 p-1 lg:p-2 rounded-full"
-          className="latoclass lg:mt-10 flex items-center justify-center gap-2 w-56 lg:w-66.5 h-12 lg:h-16  z-10 bg-white border border-e-primary-100 text-primary-100  text-[14px] lg:text-[16px] font-medium rounded-[60px] lg:rounded-full"
+          className2="bg-primary-100/5 group-hover:bg-[#ffffff]/8 p-1 lg:p-2 rounded-full"
+          className="latoclass group lg:mt-10 flex items-center justify-center gap-2 w-56 lg:w-66.5 h-12 lg:h-16  z-10 bg-white border border-primary-100 hover:text-white hover:bg-primary-100 text-primary-100  text-[14px] lg:text-[16px] font-medium rounded-[60px] lg:rounded-full"
         />
       </div>
     </section>

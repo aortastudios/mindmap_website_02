@@ -9,6 +9,14 @@ interface QuestionProp {
 
 const Questions = ({ question, answer }: QuestionProp) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [animate, setAnimate] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+    setAnimate(true);
+    setTimeout(() => setAnimate(false), 500); // reset after animation
+  };
+
 
   return (
     <div
@@ -16,7 +24,7 @@ const Questions = ({ question, answer }: QuestionProp) => {
     >
       {/* Question row */}
       <div
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleClick}
         className="w-full flex justify-between px-5 lg:px-10 items-center h-20 lg:h-23"
       >
         <span
@@ -31,7 +39,8 @@ const Questions = ({ question, answer }: QuestionProp) => {
             width={42}
             height={42}
             alt="toggle_icon"
-            className="w-full h-full"
+           className={`w-full h-full ${animate ? "animate-rotate-once" : ""}`}
+
           />
         </span>
       </div>

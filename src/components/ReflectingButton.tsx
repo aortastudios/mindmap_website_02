@@ -21,6 +21,14 @@ const ReflectingButton = ({
           width={20}
           height={20}
           alt="chevron_right_icon"
+          className="group-hover:hidden block"
+        />
+         <Image
+          src={"/icons/chevrons-white.png"}
+          width={20}
+          height={20}
+          alt="chevron_right_icon"
+          className="group-hover:block hidden"
         />
       </span>
     </Link>

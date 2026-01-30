@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PrivacyBody = () => {
   return (
-    <section className="w-full h-full mb-20 mt-35 lg:mt-20 ">
+    <section className="w-full h-full mb-20 mt-35 lg:mt-40 ">
       <Container>
         <div className="w-full lg:max-w-300 h-full bg-white rounded-[30px] lg:rounded-3xl p-5 lg:p-10">
           {/* header */}
@@ -153,15 +153,14 @@ const PrivacyBody = () => {
             </div>
             <div className="mt-8">
               <h1 className="text-[20px] md:text-[24px] font-bold text-[#202020]">
-                Contact Us
+                Cookies
               </h1>
               <p className="text-primary-200 font-medium text-[14px] leading-6 lg:leading-7 md:text-lg mt-3">
-                If you have questions, concerns, or requests regarding this
-                Privacy Policy or your data, please{" "}
-                <Link href={"/contact"} className="text-blue-500">
-                  contact us
+                Kindly check out how we manage your
+                <Link href={"/cookies"} className="text-blue-500 pl-1">
+                  cookies here.
                 </Link>{" "}
-                through our official support channels.
+                
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CookieBody = () => {
   return (
-    <section className="w-full h-full mb-20 mt-35 lg:mt-20 ">
+    <section className="w-full h-full mb-20 mt-35 lg:mt-40 ">
       <Container>
         <div className="w-full lg:max-w-300 h-full bg-white rounded-[30px] lg:rounded-3xl p-5 lg:p-10">
           {/* header */}

@@ -81,14 +81,14 @@ const Download = () => {
                   name="Download for Android"
                   iconClass="text-primary-200 text-[16px]"
                   className2="p-2 rounded-full bg-[#111111]/8"
-                  className="latoclass mt-8 flex items-center justify-center gap-2 w-67 h-14 z-10 bg-white text-primary-100  text-[18px] lg:text-xl font-medium rounded-full "
+                  className="latoclass mt-8 flex items-center justify-center gap-2 w-67 h-14 z-10 bg-white text-[#111111]  text-[18px] lg:text-xl font-medium rounded-full "
                 />
                 <DownloadButton
                   path="#"
-                  iconClass="text-white text-[16px]"
+                  iconClass="text-white group-hover:text-primary-200 text-[16px]"
                   name="Download for IOS"
-                  className2="p-2 rounded-full bg-[#F3F3F3]/8"
-                  className="latoclass mt-8 flex items-center justify-center gap-2 w-59 h-14 z-10 text-white bg-white/10  text-[18px] lg:text-xl font-medium rounded-full "
+                  className2="p-2 rounded-full bg-[#F3F3F3]/8 group-hover:bg-[#111111]/8"
+                  className="latoclass mt-8 flex items-center group justify-center gap-2 w-59 h-14 z-10 hover:text-primary-200 hover:bg-white text-white bg-white/10  text-[18px] lg:text-xl font-medium rounded-full "
                 />
               </div>
             </div>

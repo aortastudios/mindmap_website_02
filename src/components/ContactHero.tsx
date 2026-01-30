@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const ContactHero = () => {
   return (
-    <section className=" w-full pt-[120px] lg:pt-5">
+    <section className=" w-full pt-30 lg:pt-40">
       <Container>
         <div className="w-full text-primary-100 ">
           <h1 className=" text-[24px] lg:text-[52px] font-bold lg:font-semibold text-center">

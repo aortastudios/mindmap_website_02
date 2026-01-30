@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed lg:relative top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50"
+      className="fixed  top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50"
       id="home"
     >
       {/* desktop */}
@@ -95,7 +95,7 @@ const Navbar = () => {
         <nav
           className={` ${
             isMobileNavOpen ? "left-0 right-0" : "-left-full"
-          } absolute  top-0  h-screen flex flex-col space-y-10  px-8 bg-white z-40 transition-all duration-700 ease-in-out`}
+          } absolute  top-0  h-screen flex flex-col space-y-10  px-8 bg-white z-40 `}
         >
           <ul className="flex  flex-col space-y-8 mt-20 pt-10">
             {mobileNavLinks.map((link) => (
