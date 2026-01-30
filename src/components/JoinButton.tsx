@@ -13,7 +13,7 @@ const JoinButton = ({
   iconClass?: string;
 }) => {
   return (
-    <Link href={"/wait-list"} className={className}>
+    <Link href={"/waitlist"} className={className}>
       <span className="">{name}</span>
       <span className={className2}>
         <Image

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BlogCategoryTag from "./BlogCategoryTag";
 import type { BlogCardProp } from "@/types/blogTypes";
+import Link from "next/link";
 
 const BlogCard = ({
   text1,
@@ -12,10 +13,13 @@ const BlogCard = ({
   nameAndTime,
   title,
   text,
-  src
+  src,
 }: BlogCardProp) => {
   return (
-    <div className="w- h-full lg:h-50 flex flex-col lg:flex-row gap-4">
+    <Link
+      href={"/blog/blog-details"}
+      className="w- h-full lg:h-50 flex flex-col lg:flex-row gap-4"
+    >
       <div className="w-full h-50 lg:w-80 lg:h-full  rounded-[20px] relative">
         <Image src={src} fill alt="image" />
       </div>
@@ -38,7 +42,7 @@ const BlogCard = ({
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
