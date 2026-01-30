@@ -1,13 +1,19 @@
+"use client";
 import Image from "next/image";
 import JoinButton from "./JoinButton";
 import Container from "./Container";
 import { company, footerLink, resources, socialLink } from "@/utils/navLinks";
 import Link from "next/link";
 import Socials from "./Socials";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathName = usePathname();
+  const isWaitList = pathName.includes("/waitlist");
   return (
-    <footer className="w-full h-full  footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden">
+    <footer
+      className={` ${isWaitList ? "hidden" : "w-full h-full  footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden"}`}
+    >
       {/* desktop */}
       <div
         className="relative w-full  h-150 mx-auto 
@@ -130,7 +136,7 @@ const Footer = () => {
                 © {new Date().getFullYear()} MindMap. All rights reserved.
               </p>
             </div>
-            
+
             <div className="text-white hidden lg:flex max-w-298 mx-auto w-[90%] lg:w-auto mt-1  items-center justify-between">
               <div className="">
                 <p className="text-[18px] font-normal text-white/70 ">

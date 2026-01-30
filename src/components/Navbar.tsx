@@ -23,11 +23,11 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed  top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none  max-w-360  h-32 mx-auto  flex items-center justify-center z-50"
+      className="fixed  top-0 left-0 right-0  backdrop-blur-xs lg:backdrop-blur-none   max-w-360  h-32 mx-auto  flex items-center justify-center z-50"
       id="home"
     >
       {/* desktop */}
-      <div className={`hidden max-w-310 w-full h-20 px-5 lg:flex items-center justify-center py-4.5 ${isAbout && 'border-[0.5px] border-gray-500 rounded-[128px] shadow-md'}`}>
+      <div className={`hidden max-w-310 w-full h-20 px-5 lg:flex items-center justify-center py-4.5 backdrop-blur-xs rounded-full overflow-hidden  ${isAbout && 'border-[0.5px] border-gray-500 rounded-[128px] shadow-md'}`}>
         <div className="w-full flex ">
           {/* logo */}
           <Link href={'/'} className=" flex-1 flex items-center gap-2">
@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
       {/* mobile */}
       <div className="w-[90%]  mx-auto flex lg:hidden   ">
-        <div className="w-full flex justify-between items-center h-14 rounded-full bg-white px-5 py-3 ">
+        <div className="w-full flex justify-between items-center h-14   rounded-full bg-white px-5 py-3 ">
           <div className="flex-1  cursor-pointer z-50">
             <Link href={"/"} className="flex gap-2 ">
               <Image

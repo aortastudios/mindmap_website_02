@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const CommunityHeader = () => {
   return (
-    <section className=" w-full pt-30 lg:pt-5 mb-10 lg:mb-0">
+    <section className=" w-full h-full mb-10 lg:mb-5 mt-35 lg:mt-40">
       <Container>
         <div className="w-full text-primary-100 ">
           <h1 className=" text-[24px] lg:text-[48px] font-bold lg:font-semibold text-center">
