@@ -10,9 +10,10 @@ export interface BlogCardProp {
   text: string;
   src: string;
   slug: string;
+  author: string;
 }
 
-export interface BlogArticleCardProp{
+export interface BlogArticleCardProp {
   author: string;
   currentSlug: string;
   firstImage: React.ReactNode;
@@ -20,6 +21,7 @@ export interface BlogArticleCardProp{
   publishedAt: string; // ISO date string
   tags: string[];
   title: string;
+  src:string
 }
 
 export interface BlogCategoryProp {
@@ -29,4 +31,23 @@ export interface BlogCategoryProp {
   text2?: string;
   bg2?: string;
   textColor2?: string;
+}
+
+export interface blogArticleDetailProp {
+  title: string;
+  publishedAt: string;
+  author: string;
+  firstImage: React.ReactNode;
+  secondImage: React.ReactNode;
+  firstImageDescription: string;
+  secondImageDescription: string;
+  category: string;
+  firstQuestion: string;
+  secondQuestion: string;
+  thirdQuestion: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  firstContent: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  secondContent: any;
+  tags: string[];
 }

@@ -2,8 +2,35 @@ import Container from "./Container";
 
 import MoreBlogCard from "./MoreBlogCard";
 import Controls from "./Controls";
+import { BlogArticleCardProp } from "@/types/blogTypes";
+import { client } from "@/lib/sanity";
 
-const MoreBlogs = ({ title }: { title: string }) => {
+export const revalidate = 60; // Revalidate every 60 seconds
+
+// Fetch blog
+async function getData() {
+  const query = `
+  *[_type == 'blog'] | order(_createdAt desc){
+  title,
+  publishedAt,
+  "currentSlug" : slug.current,
+  firstImage,
+  author,
+  firstImageDescription,
+  tags
+
+    
+}
+  `;
+
+  const data = await client.fetch(query);
+  return data;
+}
+
+const MoreBlogs = async ({ title }: { title: string }) => {
+  const blogData: BlogArticleCardProp[] = await getData();
+  console.log("Data fetched ", blogData);
+
   return (
     <div className="w-full h-full">
       <Container>
@@ -12,12 +39,9 @@ const MoreBlogs = ({ title }: { title: string }) => {
             {title}
           </h1>
           <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <MoreBlogCard />
-            <MoreBlogCard />
-            <MoreBlogCard />
-            <MoreBlogCard />
-            <MoreBlogCard />
-            <MoreBlogCard />
+            {blogData?.map((blog, index) => (
+              <MoreBlogCard key={index} {...blog} />
+            ))}
           </div>{" "}
           <div className="w-full h-px bg-[#EAECF0]"></div>
           <Controls />

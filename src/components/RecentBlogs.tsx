@@ -56,6 +56,7 @@ const RecentBlogs = async () => {
                 slug={blog.currentSlug}
                 title={blog.title}
                 text={blog.firstImageDescription}
+                author={blog.author}
               />
             ))}
           </div>

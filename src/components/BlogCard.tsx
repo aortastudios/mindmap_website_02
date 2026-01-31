@@ -11,6 +11,7 @@ const BlogCard = ({
   bg2,
   textColor2,
   nameAndTime,
+  author,
   title,
   text,
   src,
@@ -26,7 +27,7 @@ const BlogCard = ({
       </div>
       <div className=" flex-1">
         <p className="text-primary-100 text-[12px] lg:text-[14px] font-semibold">
-          {nameAndTime}
+          {author} . {nameAndTime}
         </p>
         <p className="mt-2 text-primary-200 font-bold text-base lg:text-lg">
           {title}
