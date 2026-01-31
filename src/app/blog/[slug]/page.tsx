@@ -1,10 +1,37 @@
 import Container from "@/components/Container";
 import MoreBlogs from "@/components/MoreBlogs";
 import Navbar from "@/components/Navbar";
+import { client } from "@/lib/sanity";
 import Image from "next/image";
-import React from "react";
 
-const BlogArticle = () => {
+// Fetch blog details
+async function getBlogDetails(slug: string) {
+  const query = `
+*[_type == 'blog' && slug.current == "${slug}"]{
+  title,
+  publishedAt,
+  author,
+  firstImage,
+  secondImage,
+  firstImageDescription,
+  secondImageDescription,
+  category,
+  firstQuestion,
+  secondQuestion,
+  thirdQuestion,
+  firstContent,
+  secondContent,
+  tags
+}[0]
+`;
+
+  const data = await client.fetch(query);
+  return data;
+}
+const BlogArticle = async ({ params }: { params: { slug: string } }) => {
+  const { slug } = await params;
+  const data = await getBlogDetails(slug);
+  console.log("Blog details", data);
   return (
     <main className="min-h-screen w-full ">
       <Navbar />

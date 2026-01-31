@@ -2,8 +2,35 @@ import Container from "./Container";
 import NewsLetter from "./NewsLetter";
 import BlogCard from "./BlogCard";
 import MentalStateCard from "./MentalStateCard";
+import { client, urlFor } from "@/lib/sanity";
+import { BlogArticleCardProp } from "@/types/blogTypes";
+import { formatDate } from "@/helpers/formatDate";
 
-const RecentBlogs = () => {
+export const revalidate = 60; // Revalidate every 60 seconds
+
+// Fetch blog
+async function getData() {
+  const query = `
+  *[_type == 'blog'] | order(_createdAt desc){
+  title,
+  publishedAt,
+  "currentSlug" : slug.current,
+  firstImage,
+  author,
+  firstImageDescription,
+  tags
+
+    
+}
+  `;
+
+  const data = await client.fetch(query);
+  return data;
+}
+
+const RecentBlogs = async () => {
+  const blogData: BlogArticleCardProp[] = await getData();
+
   return (
     <section className="my-10 w-full h-full">
       <Container>
@@ -15,30 +42,22 @@ const RecentBlogs = () => {
           <NewsLetter />
           {/* right side with blog cards */}
           <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-110">
-            <BlogCard
-              src="/images/clarity.png"
-              text1="Wellness"
-              bg1="bg-[#6941C6]/10"
-              textColor1="text-[#6941C6]"
-              text2="Mental Health"
-              bg2="bg-[#FDF2FA]"
-              textColor2="text-[#C11574]"
-              nameAndTime="Phoenix Baker • 1 Jan 2023"
-              title="Finding Clarity in Quiet Moments"
-              text="Taking a few quiet moments each day allows your mind to settle and your thoughts to surface naturally. In stillness, you begin to notice what truly needs attention—e"
-            />
-            <BlogCard
-              src="/images/patterns.png"
-              text1="Mindfulness"
-              bg1="bg-[#ECFDF3]"
-              textColor1="text-[#027A48]"
-              text2="Mental Health"
-              bg2="bg-[#FDF2FA]"
-              textColor2="text-[#C11574]"
-              nameAndTime="Lana Steiner • 1 Jan 2023"
-              title="Understanding Your Emotional Patterns"
-              text="Emotions often follow patterns we don’t notice until we pause to reflect. By paying attention to recurring feelings and triggers, you gain insight into your emoti"
-            />
+            {blogData?.slice(0, 2).map((blog, idx) => (
+              <BlogCard
+                key={idx}
+                src={urlFor(blog.firstImage).url()}
+                text1={blog.tags[0]}
+                text2={blog.tags[1]}
+                bg1="bg-[#6941C6]/10"
+                bg2="bg-[#FDF2FA]"
+                textColor1="text-[#6941C6]"
+                textColor2="text-[#C11574]"
+                nameAndTime={formatDate(blog.publishedAt)}
+                slug={blog.currentSlug}
+                title={blog.title}
+                text={blog.firstImageDescription}
+              />
+            ))}
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-4 mt-10 ">

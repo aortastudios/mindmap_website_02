@@ -14,10 +14,11 @@ const BlogCard = ({
   title,
   text,
   src,
+  slug,
 }: BlogCardProp) => {
   return (
     <Link
-      href={"/blog/blog-details"}
+      href={`/blog/${slug}`}
       className="w- h-full lg:h-50 flex flex-col lg:flex-row gap-4"
     >
       <div className="w-full h-50 lg:w-80 lg:h-full  rounded-[20px] relative">
