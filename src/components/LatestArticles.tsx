@@ -9,7 +9,7 @@ const LatestArticles = () => {
       <LatestCognitiveArticles />
       <LatestEmotionalArticles />
       <LatestRecoveryArticle />
-      <MoreBlogs />
+      <MoreBlogs title=" More Blog Posts" />
     </section>
   );
 };

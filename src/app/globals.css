@@ -59,6 +59,7 @@ a {
 .terms,
 .cookie,
 .community,
+.blog-article,
 .footer {
   background-color: #f6f6f6;
 }
@@ -71,8 +72,12 @@ a {
 
 /* To rotate acccordion button for FAQS */
 @keyframes rotate360 {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(90deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 .animate-rotate-once {
