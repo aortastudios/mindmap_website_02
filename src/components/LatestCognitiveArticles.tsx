@@ -70,7 +70,7 @@ const LatestCognitiveArticles = ({ articles }: Props) => {
 
             <div className=" h-full flex-1 ">
               <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-full lg:h-110">
-                {articles.slice(1).map((blog, idx) => (
+                {articles.slice(1,3).map((blog, idx) => (
                   <BlogCard
                     key={idx}
                     src={urlFor(blog.firstImage).url()}
