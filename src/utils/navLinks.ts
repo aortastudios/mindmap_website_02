@@ -67,6 +67,8 @@ export const company = [
   { name: " Blog", path: navPaths.blog },
   { name: "Career", path: navPaths.careers },
   { name: "Terms Of Use", path: navPaths.terms },
+  { name: "Cookies", path: navPaths.cookies },
+
 ];
 
 export const socialLink = [
