@@ -21,7 +21,9 @@ export interface BlogArticleCardProp {
   publishedAt: string; // ISO date string
   tags: string[];
   title: string;
-  src:string
+  src: string;
+  category?: string;
+  href?: string;
 }
 
 export interface BlogCategoryProp {

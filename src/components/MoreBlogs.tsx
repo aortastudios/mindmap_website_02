@@ -29,7 +29,14 @@ async function getData() {
 
 const MoreBlogs = async ({ title }: { title: string }) => {
   const blogData: BlogArticleCardProp[] = await getData();
-  console.log("Data fetched ", blogData);
+
+  if (blogData.length < 3) {
+    return (
+      <p className="max-w-310 mx-auto px-10 text-red-500 my-10">
+        This section is coming soon!!!!
+      </p>
+    );
+  }
 
   return (
     <div className="w-full h-full">

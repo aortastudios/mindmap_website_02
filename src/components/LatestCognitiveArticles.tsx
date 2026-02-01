@@ -4,8 +4,23 @@ import Container from "./Container";
 import BlogCard from "./BlogCard";
 import Controls from "./Controls";
 import { IoArrowForwardSharp } from "react-icons/io5";
+import { BlogArticleCardProp } from "@/types/blogTypes";
+import { urlFor } from "@/lib/sanity";
+import { formatDate } from "@/helpers/formatDate";
+import Link from "next/link";
+type Props = {
+  articles: BlogArticleCardProp[];
+};
 
-const LatestCognitiveArticles = () => {
+const LatestCognitiveArticles = ({ articles }: Props) => {
+  if (articles.length < 3) {
+    return (
+      <p className="max-w-310 mx-auto px-10 text-red-500 my-10">
+        This section is coming soon!!!!
+      </p>
+    );
+  }
+
   return (
     <div className="w-full h-full mb-10">
       <Container>
@@ -14,70 +29,64 @@ const LatestCognitiveArticles = () => {
             Latest Cognitive Wellness articles
           </h1>
           <div className="w-full h-full xl:h-108  flex flex-col xl:flex-row gap-6 ">
-            <div className=" h-full flex-1  ">
-              <div className="upper-div h-50 sm:h-100  xl:h-50 w-full  rounded-[20px] overflow-hidden relative ">
-                <Image src={"/images/wellness.png"} alt="Wellness_image" fill  className="object-cover"/>
-              </div>
-              <div className="lower-div h-[50%] w-full  pt-10">
-                <p className={`text-[14px] font-semibold text-[#6941C6]`}>
-                  Olivia Rhye • 1 Jan 2024
-                </p>
-                <p className=" flex items-center justify-between font-semibold text-base lg:text-[24px] text-primary-200 py-2">
-                  <span className="">
-                    Incorporating daily journaling for self reflection
-                  </span>{" "}
-                  <IoArrowForwardSharp className="w-6 transform -rotate-45" />
-                </p>{" "}
-                <p className="line-clamp-2 text-[#667085] pb-2">
-                  Daily journaling is one of the simplest ways to create space
-                  for self-reflection. It doesn’t require long entries or
-                  perfect words—just a few honest moments with your thoughts. By
-                </p>
-                <div className="flex items-center gap-2 mt-3   ">
-                  <BlogCategoryTag
-                    text={"Wellness"}
-                    bg={"bg-[#6941C6]/10"}
-                    textColor={"text-[#6941C6]"}
-                  />
-                  <BlogCategoryTag
-                    text={"Mindfulness"}
-                    bg={"bg-[#ECFDF3]"}
-                    textColor={"text-[#027A48]"}
-                  />
-                  <BlogCategoryTag
-                    text={"Mental Health"}
-                    bg={"bg-[#FDF2FA]"}
-                    textColor={"text-[#C11574]"}
+            {articles.slice(0, 1).map((article, index) => (
+              <Link
+                href={`/blog/${article.currentSlug}`}
+                key={index}
+                className=" h-full flex-1  "
+              >
+                <div className="upper-div h-50 sm:h-100  xl:h-50 w-full  rounded-[20px] overflow-hidden relative ">
+                  <Image
+                    src={urlFor(article.firstImage).url()}
+                    alt="Wellness_image"
+                    fill
+                    className="object-cover"
                   />
                 </div>
-              </div>
-            </div>
+                <div className="lower-div h-[50%] w-full  pt-10">
+                  <p className={`text-[14px] font-semibold text-[#6941C6]`}>
+                    {article.author} • {formatDate(article.publishedAt)}
+                  </p>
+                  <p className=" flex items-center justify-between font-semibold text-base lg:text-[24px] text-primary-200 py-2">
+                    <span className="line-clamp-1">{article.title}</span>{" "}
+                    <IoArrowForwardSharp className="w-6 transform -rotate-45" />
+                  </p>{" "}
+                  <p className="line-clamp-2 text-[#667085] mb-2">
+                    {article.firstImageDescription}
+                  </p>
+                  <div className="flex items-center gap-2 mt-3   ">
+                    {article.tags.map((tag, index) => (
+                      <BlogCategoryTag
+                        key={index}
+                        text={tag}
+                        bg={`${index === 0 ? "bg-[#6941C6]/10" : "bg-[#ECFDF3]"}`}
+                        textColor={`${index === 1 ? "text-[#6941C6]" : "text-[#027A48]"}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </Link>
+            ))}
+
             <div className=" h-full flex-1 ">
               <div className="wrapper flex-1 flex flex-col md:flex-row lg:flex-col gap-6 lg:gap-4 h-full lg:h-110">
-                <BlogCard
-                  src="/images/clarity.png"
-                  text1="Wellness"
-                  bg1="bg-[#6941C6]/10"
-                  textColor1="text-[#6941C6]"
-                  text2="Mental Health"
-                  bg2="bg-[#FDF2FA]"
-                  textColor2="text-[#C11574]"
-                  nameAndTime="Phoenix Baker • 1 Jan 2023"
-                  title="Finding Clarity in Quiet Moments"
-                  text="Taking a few quiet moments each day allows your mind to settle and your thoughts to surface naturally. In stillness, you begin to notice what truly needs attention—e"
-                />
-                <BlogCard
-                  src="/images/patterns.png"
-                  text1="Mindfulness"
-                  bg1="bg-[#ECFDF3]"
-                  textColor1="text-[#027A48]"
-                  text2="Mental Health"
-                  bg2="bg-[#FDF2FA]"
-                  textColor2="text-[#C11574]"
-                  nameAndTime="Lana Steiner • 1 Jan 2023"
-                  title="Understanding Your Emotional Patterns"
-                  text="Emotions often follow patterns we don’t notice until we pause to reflect. By paying attention to recurring feelings and triggers, you gain insight into your emoti"
-                />
+                {articles.slice(1).map((blog, idx) => (
+                  <BlogCard
+                    key={idx}
+                    src={urlFor(blog.firstImage).url()}
+                    text1={blog.tags[0]}
+                    text2={blog.tags[1]}
+                    bg1="bg-[#6941C6]/10"
+                    bg2="bg-[#FDF2FA]"
+                    textColor1="text-[#6941C6]"
+                    textColor2="text-[#C11574]"
+                    nameAndTime={formatDate(blog.publishedAt)}
+                    slug={blog.currentSlug}
+                    title={blog.title}
+                    text={blog.firstImageDescription}
+                    author={blog.author}
+                  />
+                ))}
               </div>
             </div>
           </div>
