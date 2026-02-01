@@ -101,7 +101,7 @@ const LatestEmotionalArticles = ({ articles }: Props) => {
             key={index}
             className="w-full h-full lg:h-76.5 lg:bg-white rounded-[20px] mt-4 flex lg:px-5 items-center flex-col lg:flex-row gap-4"
           >
-            <div className=" h-48.25 sm:h-100 lg:h-61.5 w-full  lg:flex-1 flex items-center justify-center rounded-[20px] relative">
+            <div className=" h-48.25 sm:h-100 lg:h-61.5 w-full  lg:flex-1 flex items-center justify-center rounded-[20px] overflow-hidden relative">
               <Image
                 src={urlFor(article.firstImage).url()}
                 fill

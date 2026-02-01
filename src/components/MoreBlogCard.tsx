@@ -17,7 +17,7 @@ const MoreBlogCard = ({
 }: BlogArticleCardProp) => {
   return (
     <Link href={`/blog/${currentSlug}`} className=" h-111 flex-1 ">
-      <div className="upper-div h-50 lg:h-[50%] w-full  rounded-[20px] relative">
+      <div className="upper-div h-50 lg:h-[50%] w-full  rounded-[20px] overflow-hidden relative">
         <Image src={urlFor(firstImage).url()} alt="Wellness_image" fill />
       </div>
       <div className="lower-div h-[50%] w-full  pt-10">
