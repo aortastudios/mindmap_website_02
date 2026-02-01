@@ -98,7 +98,7 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
                   <p className="mb-3">{data.secondQuestion}</p>
                   <p className="mb-3">{data.thirdQuestion}</p>
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 rounded-[20px] overflow-hidden">
                   <Image
                     src={urlFor(data?.firstImage).url()}
                     alt="mind_image"
@@ -117,7 +117,7 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
                   {data.secondImageDescription}
                 </p>
 
-                <div className="mt-4">
+                <div className="mt-4 rounded-[20px] overflow-hidden">
                   <Image
                     src={urlFor(data?.secondImage).url()}
                     alt="mind_image"
