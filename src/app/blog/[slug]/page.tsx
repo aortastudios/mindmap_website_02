@@ -7,7 +7,6 @@ import { blogArticleDetailProp } from "@/types/blogTypes";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 
-export const revalidate = 60; // Revalidate every 60 seconds
 // Fetch blog details
 async function getBlogDetails(slug: string) {
   const query = `
@@ -35,7 +34,7 @@ async function getBlogDetails(slug: string) {
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const { slug } = await params;
   const data: blogArticleDetailProp = await getBlogDetails(slug);
-  
+
   return (
     <main className="min-h-screen w-full ">
       <Navbar />

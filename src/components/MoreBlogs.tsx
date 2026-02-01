@@ -5,7 +5,7 @@ import Controls from "./Controls";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import { client } from "@/lib/sanity";
 
-export const revalidate = 60; // Revalidate every 60 seconds
+
 
 // Fetch blog
 async function getData() {

@@ -56,19 +56,31 @@ export default {
       name: 'firstQuestion',
       type: 'string',
       title: 'First question',
-      validation: (Rule: Rule) => Rule.required().error('Please provide question'),
+      validation: (Rule: Rule) =>
+        Rule.required()
+          .min(5)
+          .max(35)
+          .error('Please provide a question between 5 and 35 characters'),
     },
     {
       name: 'secondQuestion',
       type: 'string',
       title: 'Second question',
-      validation: (Rule: Rule) => Rule.required().error('Please provide question'),
+      validation: (Rule: Rule) =>
+        Rule.required()
+          .min(5)
+          .max(35)
+          .error('Please provide a question between 5 and 35 characters'),
     },
     {
       name: 'thirdQuestion',
       type: 'string',
       title: 'Third question',
-      validation: (Rule: Rule) => Rule.required().error('Please provide question'),
+      validation: (Rule: Rule) =>
+        Rule.required()
+          .min(5)
+          .max(35)
+          .error('Please provide a question between 5 and 35 characters'),
     },
 
     {
@@ -99,23 +111,20 @@ export default {
       validation: (Rule: Rule) => Rule.required().error('Blog content cannot be empty'),
     },
     {
-  name: 'tags',
-  type: 'array',
-  title: 'Tags',
-  of: [{ type: 'string' }],
-  options: {
-    list: [
-      { title: 'Wellness', value: 'wellness' },
-      { title: 'Mental Health', value: 'mental-health' },
-      { title: 'Mindfulness', value: 'mindfulness' },
-    ],
-  },
-  validation: (Rule: Rule) =>
-    Rule.required()
-      .min(1)
-      .max(2)
-      .error('Please select one or two tags'),
-},
+      name: 'tags',
+      type: 'array',
+      title: 'Tags',
+      of: [{type: 'string'}],
+      options: {
+        list: [
+          {title: 'Wellness', value: 'wellness'},
+          {title: 'Mental Health', value: 'mental-health'},
+          {title: 'Mindfulness', value: 'mindfulness'},
+        ],
+      },
+      validation: (Rule: Rule) =>
+        Rule.required().min(1).max(2).error('Please select one or two tags'),
+    },
 
     {
       name: 'author',

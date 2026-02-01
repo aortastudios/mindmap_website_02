@@ -6,8 +6,6 @@ import { client, urlFor } from "@/lib/sanity";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import { formatDate } from "@/helpers/formatDate";
 
-export const revalidate = 60; // Revalidate every 60 seconds
-
 // Fetch blog
 async function getData() {
   const query = `

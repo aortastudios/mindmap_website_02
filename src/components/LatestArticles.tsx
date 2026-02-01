@@ -5,8 +5,6 @@ import LatestRecoveryArticle from "./LatestRecoveryArticle";
 import MoreBlogs from "./MoreBlogs";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 
-export const revalidate = 60; // Revalidate every 60 seconds
-
 // Fetch blog
 async function getData() {
   const query = `
@@ -29,17 +27,17 @@ async function getData() {
 }
 const LatestArticles = async () => {
   const blogData: BlogArticleCardProp[] = await getData();
-  // console.log("LATEST artcles", blogData);
+  
 
-   // Filter by category
+  // Filter by category
   const cognitiveArticles = blogData.filter(
-    (article) => article.category === "Cognitive Wellness"
+    (article) => article.category === "Cognitive Wellness",
   );
   const emotionalArticles = blogData.filter(
-    (article) => article.category === "Emotional Regulation"
+    (article) => article.category === "Emotional Regulation",
   );
   const recoveryArticles = blogData.filter(
-    (article) => article.category === "Rest and Recovery"
+    (article) => article.category === "Rest and Recovery",
   );
   return (
     <section className="w-full h-full">
