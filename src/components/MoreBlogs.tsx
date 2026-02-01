@@ -1,11 +1,11 @@
-import Container from "./Container";
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
+import Container from "./Container";
 import MoreBlogCard from "./MoreBlogCard";
 import Controls from "./Controls";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import { client } from "@/lib/sanity";
-
-
 
 // Fetch blog
 async function getData() {

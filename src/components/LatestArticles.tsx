@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 import { client } from "@/lib/sanity";
 import LatestCognitiveArticles from "./LatestCognitiveArticles";
 import LatestEmotionalArticles from "./LatestEmotionalArticles";
@@ -27,7 +30,6 @@ async function getData() {
 }
 const LatestArticles = async () => {
   const blogData: BlogArticleCardProp[] = await getData();
-  
 
   // Filter by category
   const cognitiveArticles = blogData.filter(

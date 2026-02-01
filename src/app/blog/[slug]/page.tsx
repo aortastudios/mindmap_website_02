@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 import Container from "@/components/Container";
 import MoreBlogs from "@/components/MoreBlogs";
 import Navbar from "@/components/Navbar";
