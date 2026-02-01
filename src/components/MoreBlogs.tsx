@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
-
+export const revalidate = 0;
 import Container from "./Container";
 import MoreBlogCard from "./MoreBlogCard";
 import Controls from "./Controls";

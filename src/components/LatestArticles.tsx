@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
-
+export const revalidate = 0;
 import { client } from "@/lib/sanity";
 import LatestCognitiveArticles from "./LatestCognitiveArticles";
 import LatestEmotionalArticles from "./LatestEmotionalArticles";
