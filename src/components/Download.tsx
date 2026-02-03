@@ -21,7 +21,7 @@ const Download = () => {
 
               {/* various icons poistioned absolutely */}
 
-              <div className=" ">
+              <div className="animate-pulse ">
                 <Image
                   src={"/images/reflect1.png"}
                   width={68}
@@ -108,7 +108,7 @@ const Download = () => {
                   />
                 </div>
                 {/* absolutely positioned icons */}
-                <div className=" ">
+                <div className="animate-pulse ">
                   <Image
                     src={"/images/reflect1.png"}
                     width={52}

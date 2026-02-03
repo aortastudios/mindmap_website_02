@@ -8,6 +8,7 @@ import MentalStateCard from "./MentalStateCard";
 import { client, urlFor } from "@/lib/sanity";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import { formatDate } from "@/helpers/formatDate";
+import MentalStates from "./MentalStates";
 
 // Fetch blog
 async function getData() {
@@ -62,17 +63,9 @@ const RecentBlogs = async () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between gap-4 mt-10 ">
-          <MentalStateCard
-            src="/images/cognitive.png"
-            text="Cognitive Wellness"
-          />
-          <MentalStateCard
-            src="/images/regulation.png"
-            text="Emotional Regulation"
-          />
-          <MentalStateCard src="/images/rest.png" text="Rest and Recovery" />
-        </div>
+
+        {/* Mental state cards */}
+        <MentalStates />
       </Container>
     </section>
   );

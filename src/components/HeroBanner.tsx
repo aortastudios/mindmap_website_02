@@ -31,8 +31,12 @@ const HeroBanner = () => {
             </div>
             <div className="w-full flex justify-center  ">
               <div className="w-126.5 h-13.5 flex items-center gap-6">
-                <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
-                <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md    font-semibold text-[#ffffff] rounded-full" />
+                <ReflectingButton
+                  path="/contact"
+                  name="Start Reflecting"
+                  className="latoclass flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100 hover:text-white hover:bg-linear-to-r hover:from-primary-100 hover:to-[#031A27]    text-[14px] lg:text-xl font-semibold rounded-full"
+                />
+                <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md hover:bg-linear-to-r hover:from-primary-100 hover:to-[#FFFFFF] hover:text-primary-100     font-semibold text-[#ffffff] rounded-full" />
               </div>
             </div>
             <div className="size-60 absolute  left-0 bottom-30">
@@ -71,16 +75,19 @@ const HeroBanner = () => {
               stay with you, without pressure, noise or doubt.
             </p>
             <div className="flex flex-col items-center gap-3 mt-5">
-              <ReflectingButton path="/contact" name="Start Reflecting" className="latoclass flex items-center justify-center gap-2 w-full md:w-[60%] lg:w-full  h-13  z-10 bg-white text-primary-100  text-[14px] lg:text-xl font-semibold rounded-full" />
-              <WaitlistButton className="waitlist-btn flex items-center justify-center w-full md:w-[60%] lg:w-full backdrop-blur-md  h-13  z-10  bg-white/20 border-t border-t-gray-200 border-r border-r-gray-200 shadow-md   font-semibold text-white rounded-full" />
+              <ReflectingButton
+                path="/contact"
+                name="Start Reflecting"
+                className="latoclass flex items-center justify-center gap-2 w-full md:w-[60%] lg:w-full  h-13  z-10 bg-white text-primary-100 hover:text-white hover:bg-linear-to-r hover:from-primary-100 hover:to-[#031A27]  text-[14px] lg:text-xl font-semibold rounded-full"
+              />
+              <WaitlistButton className="waitlist-btn flex items-center justify-center w-full md:w-[60%] lg:w-full backdrop-blur-md  h-13  z-10  bg-white/20 border-t border-t-gray-200 border-r border-r-gray-200 shadow-md  hover:bg-linear-to-r hover:from-primary-100 hover:to-[#FFFFFF] hover:text-primary-100  font-semibold text-white rounded-full" />
             </div>
           </div>
         </div>
       </Container>
 
       {/* backdrop overlay at the bottom of the banner */}
-           <div className="absolute  left-0 w-full bottom-0 h-20 bg-linear-to-t from-[#FBF4EF] to-transparent backdrop-blur-xs "></div>
-
+      <div className="absolute  left-0 w-full bottom-0 h-20 bg-linear-to-t from-[#FBF4EF] to-transparent backdrop-blur-xs "></div>
     </section>
   );
 };

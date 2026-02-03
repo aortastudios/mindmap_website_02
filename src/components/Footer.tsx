@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathName = usePathname();
+  const isActive = (path: string) => pathName === path;
   const isWaitList = pathName.includes("/waitlist");
   return (
     <footer
@@ -81,16 +82,25 @@ const Footer = () => {
                       </h4>
                       <div className="mt-5">
                         <ul className="flex flex-col justify-center gap-3 ">
-                          {resources.map((link, index) => (
-                            <li
-                              key={index}
-                              className="text-[#EEEEEE] font-medium text-[16px]"
-                            >
-                              <Link href={link.path} className="">
-                                {link.name}
-                              </Link>
-                            </li>
-                          ))}
+                          {resources.map((link) => {
+                            const active = isActive(link.path);
+                            return (
+                              <li
+                                key={link.path}
+                                className="text-[#EEEEEE] font-medium text-[16px] flex items-center gap-1"
+                              >
+                                {/* Dot placeholder to prevent layout shift */}
+                                <span
+                                  className={`mt-1 w-1 h-1 rounded-full ${
+                                    active ? "bg-white" : "bg-transparent"
+                                  }`}
+                                ></span>
+                                <Link href={link.path} className="">
+                                  {link.name}
+                                </Link>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </div>
@@ -100,16 +110,26 @@ const Footer = () => {
                       </h4>
                       <div className="mt-5">
                         <ul className="flex flex-col justify-center gap-3 ">
-                          {company.map((link, index) => (
-                            <li
-                              key={index}
-                              className="text-[#EEEEEE] font-medium text-[16px]"
-                            >
-                              <Link href={link.path} className="">
-                                {link.name}
-                              </Link>
-                            </li>
-                          ))}
+                          {company.map((link) => {
+                            const active = isActive(link.path);
+
+                            return (
+                              <li
+                                key={link.path}
+                                className="text-[#EEEEEE] font-medium text-[16px] flex items-center gap-1"
+                              >
+                                {/* Dot placeholder to prevent layout shift */}
+                                <span
+                                  className={`mt-1 w-1 h-1 rounded-full ${
+                                    active ? "bg-white" : "bg-transparent"
+                                  }`}
+                                ></span>
+                                <Link href={link.path} className="">
+                                  {link.name}
+                                </Link>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </div>
@@ -223,16 +243,25 @@ const Footer = () => {
                       </h4>
                       <div className="mt-2">
                         <ul className="flex flex-col justify-center gap-3  ">
-                          {resources.map((link, index) => (
-                            <li
-                              key={index}
-                              className="text-[#EEEEEE] font-medium text-[16px]"
-                            >
-                              <Link href={link.path} className="">
-                                {link.name}
-                              </Link>
-                            </li>
-                          ))}
+                          {resources.map((link) => {
+                            const active = isActive(link.path);
+                            return (
+                              <li
+                                key={link.path}
+                                className="text-[#EEEEEE] flex items-center gap-1 font-medium text-[16px]"
+                              >
+                                {/* Dot placeholder to prevent layout shift */}
+                                <span
+                                  className={`mt-1 w-1 h-1 rounded-full ${
+                                    active ? "bg-white" : "bg-transparent"
+                                  }`}
+                                ></span>
+                                <Link href={link.path} className="">
+                                  {link.name}
+                                </Link>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </div>
@@ -242,16 +271,26 @@ const Footer = () => {
                       </h4>
                       <div className="mt-2">
                         <ul className="flex flex-col justify-center gap-3 ">
-                          {company.map((link, index) => (
-                            <li
-                              key={index}
-                              className="text-[#EEEEEE] font-medium text-[16px]"
-                            >
-                              <Link href={link.path} className="">
-                                {link.name}
-                              </Link>
-                            </li>
-                          ))}
+                          {company.map((link) => {
+                            const active = isActive(link.path);
+
+                            return (
+                              <li
+                                key={link.path}
+                                className="text-[#EEEEEE] flex items-center gap-1 font-medium text-[16px]"
+                              >
+                                {/* Dot placeholder to prevent layout shift */}
+                                <span
+                                  className={`mt-1 w-1 h-1 rounded-full ${
+                                    active ? "bg-white" : "bg-transparent"
+                                  }`}
+                                ></span>
+                                <Link href={link.path} className="">
+                                  {link.name}
+                                </Link>
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     </div>
