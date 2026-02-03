@@ -32,7 +32,7 @@ async function getBlogDetails(slug: string) {
 }[0]
 `;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query, {}, { cache: "no-store" });
   return data;
 }
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
