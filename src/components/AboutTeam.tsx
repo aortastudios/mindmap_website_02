@@ -74,11 +74,11 @@ const AboutTeam = () => {
                   alt={"marketing_manager"}
                 />
               </div>
-              <div className="flex-1  ">
+              {/* <div className="flex-1  ">
                 <div className="w-85 h-79.5 relative">
                   <Image src={"/images/ring.png"} alt="ring_image" fill />
                 </div>{" "}
-              </div>
+              </div> */}
             </div>
             <div className="flex my-5">
               <div className="flex-1"></div>
@@ -86,7 +86,7 @@ const AboutTeam = () => {
               <div className="flex-2">
                 <DesktopTeamCard
                   name={"Mariana Belloso Dall"}
-                  position={" (Marketing Executive)"}
+                  position={"(Marketing Executive)"}
                   src={"/images/mariana.png"}
                   role={
                     "Mariana is a highly driven healthcare professional. A very meticulous and disciplined mental health advocate that has a natural affinity to seeing stigmatisation of mental health in society dispelled and the misinformation around healing being linear debunked."
@@ -168,7 +168,7 @@ const AboutTeam = () => {
             </div>
 
             <div className="w-full flex flex-col pt-16 relative">
-              <div className="w-56 h-52.5 absolute top-[-10%] right-[20%]">
+              {/* <div className="w-56 h-52.5 absolute top-[-10%] right-[20%]">
                 <Image
                   src={"/images/ring.png"}
                   width={224}
@@ -176,7 +176,7 @@ const AboutTeam = () => {
                   alt="ring"
                   className="w-full h-full object-contain"
                 />
-              </div>
+              </div> */}
 
               <div className="flex gap-4 w-full ">
                 <div className="flex-1 flex text-primary-100 flex-col justify-center ">

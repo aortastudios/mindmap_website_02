@@ -21,7 +21,7 @@ const DesktopTeamCard = ({ name, src, alt, position, role }: TeamProp) => {
         />
       </div>
 
-      <div className=" flex-2  text-primary-100 px-4">
+      <div className=" flex-2  text-primary-100 pl-4">
         <h1 className="text-[32px] font-bold">
           {name}
           <span className="text-[14px] font-medium pl-2">{position}</span>
