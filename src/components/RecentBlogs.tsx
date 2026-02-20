@@ -4,7 +4,6 @@ export const revalidate = 0;
 import Container from "./Container";
 import NewsLetter from "./NewsLetter";
 import BlogCard from "./BlogCard";
-import MentalStateCard from "./MentalStateCard";
 import { client, urlFor } from "@/lib/sanity";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import { formatDate } from "@/helpers/formatDate";
