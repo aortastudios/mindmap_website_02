@@ -14,7 +14,7 @@ const Controls = () => {
         />
       </div>
       <div className="flex gap-0.5 text-[#667085] pt-5">
-        <span className="w-10 h-10 font-medium  text-[12px] lg:text-[14px] bg-[#F9F5FF] text-[#7F56D9]">
+        <span className="w-10 h-10 font-medium  text-[12px] lg:text-[14px]  text-[#7F56D9]">
           1
         </span>
         <span className="w-10 h-10 font-medium text-[12px] lg:text-[14px]">

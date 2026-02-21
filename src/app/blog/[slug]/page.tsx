@@ -10,6 +10,7 @@ import { client, urlFor } from "@/lib/sanity";
 import { blogArticleDetailProp } from "@/types/blogTypes";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
+import Link from "next/link";
 
 // Fetch blog details
 async function getBlogDetails(slug: string) {
@@ -38,6 +39,7 @@ async function getBlogDetails(slug: string) {
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const { slug } = await params;
   const data: blogArticleDetailProp = await getBlogDetails(slug);
+  console.log(data);
 
   return (
     <main className="min-h-screen w-full ">
@@ -50,7 +52,9 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
               <div className="hidden xl:block w-[25%] "></div>
               <div className="flex-1 flex  flex-col xl:flex-row xl:items-center  gap-1 text-[22px] font-normal ">
                 <p className="text-primary-200/60 ">
-                  Articles {">"} {data.category} {">"}
+                  <Link href={"/blog"}>Articles</Link> {">"}
+                  <Link href={`/category/${data.category}`}>{data.category}</Link>
+                  {">"}
                 </p>
                 <p className="text-primary-100">{data.title}</p>
               </div>

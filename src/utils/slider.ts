@@ -30,7 +30,7 @@ export const mobileSlides = [
     title2: "Community",
     description2:
       "Connect with others, share experiences, and find encouragement in a safe, supportive space.",
-    images2: ["/images/community_mob1.png"],
+    images2: ["/images/community_mob_default.png"],
   },
   {
     title2: "Journal",

@@ -119,9 +119,9 @@ const Community = () => {
               <AnimatePresence mode="sync">
                 <motion.h1
                   key={title2}
-                  initial={{ opacity: 0, y: -20 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
+                  exit={{ opacity: 0, y: 0 }}
                   transition={{ duration: 0.125 }}
                   className="font-bold text-[24px] lg:text-[52px] text-center text-primary-100"
                 >
@@ -132,9 +132,9 @@ const Community = () => {
               <AnimatePresence mode="wait">
                 <motion.p
                   key={description2}
-                  initial={{ opacity: 0, y: 10 }}
+                  initial={{ opacity: 0, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
+                  exit={{ opacity: 0, y: 0 }}
                   transition={{ duration: 0.125 }}
                   className="text-primary-100 font-normal text-[16px] lg:text-[22px] text-center mt-4 px-0 lg:px-5"
                 >

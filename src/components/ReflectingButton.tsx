@@ -24,7 +24,7 @@ const ReflectingButton = ({
           className="group-hover:hidden block"
         />
         <Image
-          src={"/icons/chevrons-white.png"}
+          src={"/icons/right_white.png"}
           width={20}
           height={20}
           alt="chevron_right_icon"

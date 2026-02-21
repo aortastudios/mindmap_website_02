@@ -13,6 +13,7 @@ const MentalStates = () => {
         viewport={{ once: false }}
       >
         <MentalStateCard
+          href="/category/Cognitive Wellness"
           src="/images/cognitive.png"
           text="Cognitive Wellness"
         />
@@ -25,6 +26,7 @@ const MentalStates = () => {
         viewport={{ once: false }}
       >
         <MentalStateCard
+          href="/category/Emotional Regulation"
           src="/images/regulation.png"
           text="Emotional Regulation"
         />
@@ -36,7 +38,11 @@ const MentalStates = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false }}
       >
-        <MentalStateCard src="/images/rest.png" text="Rest and Recovery" />
+        <MentalStateCard
+          href="/category/Rest and Recovery"
+          src="/images/rest.png"
+          text="Rest and Recovery"
+        />
       </motion.div>
     </div>
   );

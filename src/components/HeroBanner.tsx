@@ -13,7 +13,7 @@ const HeroBanner = () => {
       <Container>
         {/* desktop */}
         <div className="w-full h-full hidden lg:block">
-          <div className=" w-full h-130 lg:h-165  backdrop-blur-sm  lg:rounded-[70px] flex flex-col items-center justify-center border  border-white/10  border-r  border-r-gray-500 overflow-hidden relative">
+          <div className=" w-full h-130 lg:h-165  backdrop-blur-sm  lg:rounded-[70px] flex flex-col items-center justify-center border  border-white/10   overflow-hidden relative">
             <div className=" w-182.75 h-64  mt-5 ">
               <h1 className="text-5xl font-bold text-white flex flex-col items-center">
                 <span className=" ">A quiet space for a</span>
