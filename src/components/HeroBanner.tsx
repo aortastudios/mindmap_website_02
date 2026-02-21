@@ -9,12 +9,12 @@ const HeroBanner = () => {
   const { isMobileNavOpen } = useUiStore();
 
   return (
-    <section className=" max-w-360 h-screen  mx-auto pt-10 lg:mt-15 pt-40 lg:pt-0 ">
+    <section className=" max-w-360 h-full  mx-auto  lg:mt-15 pt-50 lg:pt-20 ">
       <Container>
         {/* desktop */}
         <div className="w-full h-full hidden lg:block">
-          <div className=" w-full h-120  backdrop-blur-sm  lg:rounded-[70px] flex flex-col items-center justify-center border border-white/10 overflow-hidden relative">
-            <div className=" w-182.75 h-64  ">
+          <div className=" w-full h-130 lg:h-165  backdrop-blur-sm  lg:rounded-[70px] flex flex-col items-center justify-center border  border-white/10  border-r  border-r-gray-500 overflow-hidden relative">
+            <div className=" w-182.75 h-64  mt-5 ">
               <h1 className="text-5xl font-bold text-white flex flex-col items-center">
                 <span className=" ">A quiet space for a</span>
                 <span className="">loud mind</span>
@@ -29,21 +29,21 @@ const HeroBanner = () => {
                 </span>{" "}
               </p>
             </div>
-            <div className="w-full flex justify-center  ">
+            <div className="w-full flex justify-center mt-5  ">
               <div className="w-126.5 h-13.5 flex items-center gap-6">
                 <ReflectingButton
                   path="/contact"
                   name="Start Reflecting"
                   className="latoclass flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100 hover:text-white hover:bg-linear-to-r hover:from-primary-100 hover:to-[#031A27]    text-[14px] lg:text-xl font-semibold rounded-full"
                 />
-                <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md hover:bg-linear-to-r hover:from-primary-100 hover:to-[#FFFFFF] hover:text-primary-100     font-semibold text-[#ffffff] rounded-full" />
+                <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md hover:bg-linear-to-r hover:bg-[#FFFFFF] hover:text-primary-100     font-semibold text-[#ffffff] rounded-full" />
               </div>
             </div>
-            <div className="size-60 absolute  left-0 bottom-30">
+            <div className="w-77 h-115.5 absolute  left-0 bottom-0">
               <Image
                 src={"/images/hero_img1.png"}
-                width={349}
-                height={349}
+                width={308}
+                height={462}
                 alt="hero_image"
               />
             </div>
@@ -87,7 +87,7 @@ const HeroBanner = () => {
       </Container>
 
       {/* backdrop overlay at the bottom of the banner */}
-      <div className="absolute  left-0 w-full bottom-0 h-20 bg-linear-to-t from-[#FBF4EF] to-transparent backdrop-blur-xs "></div>
+      <div className="absolute  left-0 w-full bottom-0 h-50 lg:h-43 bg-linear-to-t from-[#FBF4EF] to-transparent backdrop-blur-xs "></div>
     </section>
   );
 };

@@ -5,6 +5,7 @@ import Link from "next/link";
 import WaitlistButton from "./WaitListButton";
 import { useUiStore } from "@/store/uiStore";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
@@ -12,14 +13,36 @@ const Navbar = () => {
   const pathname = usePathname();
   // Check if current route is one of the special ones
   const isSpecial = specialRoutes.includes(pathname);
-  const isAbout = pathname.includes('/about')
+  const isAbout = pathname.includes("/about");
 
   // Decide logo + text color
-  const logo = isSpecial ? "/icons/logo.png" : "/icons/blue_logo.png";
-  const logoText = isSpecial
-    ? "/icons/logo_text.png"
-    : "/icons/blue_logo_text.png";
+  // const logo = isSpecial ? "/icons/default_logo.png" : "/icons/blue_logo.png";
+  // const logoText = isSpecial
+  //   ? "/icons/white_logo_text.png"
+  //   : "/icons/blue_logo_text.png";
   const textColor = isSpecial ? "text-white" : "text-primary-200";
+
+  // For change of navbar background on scroll
+
+  const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
+  useEffect(() => {
+    const hero = document.getElementById("hero");
+
+    if (!hero) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsScrolledPastHero(!entry.isIntersecting);
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(hero);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <header
@@ -27,12 +50,60 @@ const Navbar = () => {
       id="home"
     >
       {/* desktop */}
-      <div className={`hidden max-w-310 w-full h-20 px-5 lg:flex items-center justify-center py-4.5 backdrop-blur-xs rounded-full overflow-hidden  ${isAbout && 'border-[0.5px] border-gray-500 rounded-[128px] shadow-md'}`}>
+      <div
+        className={`hidden max-w-310 w-full h-20 px-5 lg:flex items-center justify-center py-4.5 ${isScrolledPastHero && isSpecial && "backdrop-blur-xs rounded-full px-10 transition-all duration-700 ease-in-out"} overflow-hidden  ${isAbout && "border-[0.5px] border-gray-500 rounded-[128px] shadow-md"}`}
+      >
         <div className="w-full flex ">
           {/* logo */}
-          <Link href={'/'} className=" flex-1 flex items-center gap-2">
-            <Image src={logo} width={32} height={32} alt="Logo" />
-            <Image src={logoText} width={122} height={27} alt="Site_name" />
+          <Link href={"/"} className="flex-1 flex items-center gap-2">
+            {isSpecial ? (
+              isScrolledPastHero ? (
+                <>
+                  <Image
+                    src={"/icons/blue_logo.png"}
+                    width={32}
+                    height={32}
+                    alt="Logo"
+                  />
+                  <Image
+                    src={"/icons/blue_logo_text.png"}
+                    width={122}
+                    height={27}
+                    alt="Site_name"
+                  />
+                </>
+              ) : (
+                <>
+                  <Image
+                    src={"/icons/default_logo.png"}
+                    width={32}
+                    height={32}
+                    alt="Logo"
+                  />
+                  <Image
+                    src={"/icons/white_logo_text.png"}
+                    width={122}
+                    height={27}
+                    alt="Site_name"
+                  />
+                </>
+              )
+            ) : (
+              <>
+                <Image
+                  src={"/icons/blue_logo.png"}
+                  width={32}
+                  height={32}
+                  alt="Logo"
+                />
+                <Image
+                  src={"/icons/blue_logo_text.png"}
+                  width={122}
+                  height={27}
+                  alt="Site_name"
+                />
+              </>
+            )}
           </Link>
 
           <div className=" flex-1 flex items-center  justify-end gap-8">
@@ -41,7 +112,7 @@ const Navbar = () => {
               <div className="">
                 <ul className="flex items-center gap-8 font-semibold">
                   {deskTopNavLinks.map((link) => (
-                    <li key={link.name} className={textColor}>
+                    <li key={link.name} className={`${isSpecial && isScrolledPastHero ? "text-primary-200" : textColor}  `}>
                       <Link href={link.path}>{link.name}</Link>
                     </li>
                   ))}
@@ -78,8 +149,8 @@ const Navbar = () => {
             {isMobileNavOpen ? (
               <Image
                 src={"/icons/close.png"}
-                width={20}
-                height={20}
+                width={32}
+                height={32}
                 alt="close_icon"
               />
             ) : (

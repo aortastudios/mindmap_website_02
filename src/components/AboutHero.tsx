@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[url('/images/about_bg.png')] bg-no-repeat bg-cover h-full pb-10 lg:pb-0 lg:h-525.25">
+    <section
+      className="relative w-full min-h-screen bg-[url('/images/about_bg.png')] bg-no-repeat bg-cover h-full pb-10 lg:pb-0 lg:h-525.25"
+      id="hero"
+    >
       <Navbar />
       <div className="w-full  h-full pb-20 m lg:pt-40">
         <Container>
