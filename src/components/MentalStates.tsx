@@ -14,7 +14,7 @@ const MentalStates = () => {
       >
         <MentalStateCard
           href="/category/Cognitive Wellness"
-          src="/images/cognitive.png"
+          src="/images/cognitive1.png"
           text="Cognitive Wellness"
         />
       </motion.div>
@@ -27,7 +27,7 @@ const MentalStates = () => {
       >
         <MentalStateCard
           href="/category/Emotional Regulation"
-          src="/images/regulation.png"
+          src="/images/regulation1.png"
           text="Emotional Regulation"
         />
       </motion.div>
@@ -40,7 +40,7 @@ const MentalStates = () => {
       >
         <MentalStateCard
           href="/category/Rest and Recovery"
-          src="/images/rest.png"
+          src="/images/rest1.png"
           text="Rest and Recovery"
         />
       </motion.div>

@@ -1,11 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import MentalStateCard from "./MentalStateCard";
-import Link from "next/link";
 
 const DynamicMentalState = ({ categories }: { categories: string[] }) => {
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-4 my-10 ">
+    <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-11 my-10 ">
       {categories.map((category, index) => (
         <motion.div
           key={category}
@@ -19,10 +18,10 @@ const DynamicMentalState = ({ categories }: { categories: string[] }) => {
             href={`/category/${category}`}
             src={
               category === "Cognitive Wellness"
-                ? "/images/cognitive.png"
+                ? "/images/cognitive1.png"
                 : category === "Emotional Regulation"
-                  ? "/images/regulation.png"
-                  : "/images/rest.png"
+                  ? "/images/regulation1.png"
+                  : "/images/rest1.png"
             }
             text={category}
           />

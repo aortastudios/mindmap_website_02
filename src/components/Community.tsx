@@ -20,7 +20,6 @@ const Community = () => {
 
   const { title, description, images } = slides[currentSlide];
 
-
   // for mobile slide
   const [currentSlider, setCurrentSlider] = useState(0);
 
@@ -34,7 +33,6 @@ const Community = () => {
   };
   const { title2, description2, images2 } = mobileSlides[currentSlider];
 
-
   return (
     <section className="max-w-360 mx-auto h-230 lg:h-272.5 relative mb-0 lg:mb-14">
       <Container>
@@ -42,31 +40,13 @@ const Community = () => {
           <div className="w-full h-full hidden lg:block">
             {/* Desktop Title + Description */}
             <div className="w-full lg:w-191.75 lg:h-35 mx-auto bricolage">
-              <AnimatePresence mode="sync">
-                <motion.h1
-                  key={title}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.125 }}
-                  className="font-bold text-[24px] lg:text-[52px] text-center text-primary-100"
-                >
-                  {title}
-                </motion.h1>
-              </AnimatePresence>
+              <h1 className="font-bold text-[24px] lg:text-[52px] text-center text-primary-100">
+                {title}
+              </h1>
 
-              <AnimatePresence mode="wait">
-                <motion.p
-                  key={description}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.125 }}
-                  className="text-primary-100 font-normal text-[16px] lg:text-[22px] text-center mt-4 px-0 lg:px-5"
-                >
-                  {description}
-                </motion.p>
-              </AnimatePresence>
+              <p className="text-primary-100 font-normal text-[16px] lg:text-[22px] text-center mt-4 px-0 lg:px-5">
+                {description}
+              </p>
             </div>
 
             {/* Desktop slider */}
@@ -80,26 +60,18 @@ const Community = () => {
                 </button>
               )}
 
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentSlide}
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.125 }}
-                >
-                  {images.map((src, index) => (
-                    <Image
-                      key={index}
-                      src={src}
-                      width={860}
-                      height={640}
-                      alt="community_banner"
-                      className="mx-auto"
-                    />
-                  ))}
-                </motion.div>
-              </AnimatePresence>
+              <div>
+                {images.map((src, index) => (
+                  <Image
+                    key={index}
+                    src={src}
+                    width={860}
+                    height={640}
+                    alt="community_banner"
+                    className="mx-auto"
+                  />
+                ))}
+              </div>
 
               {currentSlide < slides.length - 1 && (
                 <button
@@ -116,31 +88,13 @@ const Community = () => {
 
           <div className="w-full h-full block lg:hidden">
             <div className="w-full lg:w-191.75 lg:h-35 mx-auto bricolage">
-              <AnimatePresence mode="sync">
-                <motion.h1
-                  key={title2}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 0 }}
-                  transition={{ duration: 0.125 }}
-                  className="font-bold text-[24px] lg:text-[52px] text-center text-primary-100"
-                >
-                  {title2}
-                </motion.h1>
-              </AnimatePresence>
+              <h1 className="font-bold text-[24px] lg:text-[52px] text-center text-primary-100">
+                {title2}
+              </h1>
 
-              <AnimatePresence mode="wait">
-                <motion.p
-                  key={description2}
-                  initial={{ opacity: 0, y: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 0 }}
-                  transition={{ duration: 0.125 }}
-                  className="text-primary-100 font-normal text-[16px] lg:text-[22px] text-center mt-4 px-0 lg:px-5"
-                >
-                  {description2}
-                </motion.p>
-              </AnimatePresence>
+              <p className="text-primary-100 font-normal text-[16px] lg:text-[22px] text-center mt-4 px-0 lg:px-5">
+                {description2}
+              </p>
             </div>
             <div className="relative  ">
               {currentSlider > 0 && (
@@ -152,26 +106,18 @@ const Community = () => {
                 </button>
               )}
 
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentSlider}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -50 }}
-                  transition={{ duration: 0.125 }}
-                >
-                  {images2.map((src, index) => (
-                    <Image
-                      key={index}
-                      src={src}
-                      width={350}
-                      height={500}
-                      alt="community_banner"
-                      className="w-216 h-162.5 object-cover mx-auto"
-                    />
-                  ))}
-                </motion.div>
-              </AnimatePresence>
+              <div>
+                {images2.map((src, index) => (
+                  <Image
+                    key={index}
+                    src={src}
+                    width={350}
+                    height={500}
+                    alt="community_banner"
+                    className="w-216 h-162.5 object-cover mx-auto"
+                  />
+                ))}
+              </div>
 
               {currentSlider < mobileSlides.length - 1 && (
                 <button
