@@ -1,5 +1,6 @@
-import Image from "next/image";
+
 import Container from "./Container";
+import BlogSearchForm from "./BlogSearchForm";
 
 const BlogSearch = () => {
   return (
@@ -16,27 +17,7 @@ const BlogSearch = () => {
           </p>
         </div>
         <div className="mt-10 ">
-          <div className="max-w-294.5 h-16  flex items-center border border-primary-100 rounded-full overflow-hidden">
-            <div className=" flex justify-center items-center  w-10 h-5 lg:w-15 lg:h-10 ">
-              <Image
-                src={"/icons/search.png"}
-                alt="Search_icon"
-                width={18}
-                height={18}
-                className=""
-              />
-            </div>
-            <div className=" w-full h-full flex-1">
-              <input
-                type="text"
-                className="w-full h-full outline-none placeholder:text-primary-100"
-                placeholder="search for articles"
-              />
-            </div>
-            <button className="    h-full w-[25%] lg:w-[13%] flex items-center justify-center    bg-primary-100  text-[#ffffff] text-[14px] lg:text-[20px] font-medium">
-              Search
-            </button>
-          </div>
+          <BlogSearchForm />
         </div>
       </Container>
     </section>

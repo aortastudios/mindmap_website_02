@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
 export const revalidate = 0;
 
-import CategorySearch from "@/components/CategorySearch";
+import BlogSearchForm from "@/components/BlogSearchForm";
 import Container from "@/components/Container";
 import DynamicMoreBlog from "@/components/DymanicMoreBlog";
 import DynamicLatestBlogCategory from "@/components/DynamicLatestBlogCategory";
@@ -44,7 +44,6 @@ const BlogCategory = async ({ params }: { params: { slug: string } }) => {
     (category) => category !== cleanedSlug,
   );
 
- 
   return (
     <main className="min-h-screen w-full overflow-hidden ">
       <Navbar />
@@ -74,10 +73,7 @@ const BlogCategory = async ({ params }: { params: { slug: string } }) => {
                   </p>
                 </div>
                 <div className="mt-10 ">
-                  <CategorySearch
-                    cleanedSlug={cleanedSlug}
-                    
-                  />
+                  <BlogSearchForm />
                 </div>
               </div>
             </div>

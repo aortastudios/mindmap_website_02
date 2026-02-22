@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import { formatDate } from "@/helpers/formatDate";
 import { client, urlFor } from "@/lib/sanity";
 import { blogArticleDetailProp } from "@/types/blogTypes";
+import { main } from "framer-motion/client";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,6 +42,19 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const data: blogArticleDetailProp = await getBlogDetails(slug);
   console.log(data);
 
+  if (data === null) {
+    return (
+      <main className="min-h-screen w-full">
+        <Navbar />
+        <Container>
+          <p className="text-center text-red-600 mt-35 lg:mt-0 lg:pt-40">
+            Article not found
+          </p>
+        </Container>
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen w-full ">
       <Navbar />
@@ -53,7 +67,9 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
               <div className="flex-1 flex  flex-col xl:flex-row xl:items-center  gap-1 text-[22px] font-normal ">
                 <p className="text-primary-200/60 ">
                   <Link href={"/blog"}>Articles</Link> {">"}
-                  <Link href={`/category/${data.category}`}>{data.category}</Link>
+                  <Link href={`/category/${data.category}`}>
+                    {data.category}
+                  </Link>
                   {">"}
                 </p>
                 <p className="text-primary-100">{data.title}</p>
