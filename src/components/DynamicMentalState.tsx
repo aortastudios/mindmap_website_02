@@ -23,6 +23,13 @@ const DynamicMentalState = ({ categories }: { categories: string[] }) => {
                   ? "/images/regulation1.png"
                   : "/images/rest1.png"
             }
+            src2={
+              category === "Cognitive Wellness"
+                ? "/images/cognitive2.png"
+                : category === "Emotional Regulation"
+                  ? "/images/regulation2.png"
+                  : "/images/rest2.png"
+            }
             text={category}
           />
         </motion.div>
