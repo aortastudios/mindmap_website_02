@@ -55,8 +55,12 @@ const AboutHero = () => {
               <h1 className="text-[18px] md:text-[40px] font-semibold py-3 ">
                 Built for people everywhere
               </h1>
-              <p className="text-[12px] md:text-[22px] lg:text-[24px] py-3 ">
-                Wherever you are, this space is here for you. Our community
+              
+              <p className="text-[12px] md:text-[22px] lg:text-[24px] pt-3 ">
+                Wherever you are, this space is here for you. 
+              </p>
+              <p className="text-[12px] md:text-[22px] lg:text-[24px] ">
+                Our community
                 spans different backgrounds, time zones, and experiences all
                 connected by a shared intention to understand ourselves better
                 and live with more awareness.

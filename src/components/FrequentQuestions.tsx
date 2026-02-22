@@ -6,7 +6,7 @@ import { questionAndAnswer } from "@/utils/frequentQuestions";
 
 const FrequentQuestions = () => {
   return (
-    <section className="mb-20 w-full h-full">
+    <section className="pb-20 w-full h-full">
       <Container>
         <div className="w-full min-h-full lg:min-h-218.25 flex flex-col lg:flex-row  items-start mt-20">
           {/* left */}

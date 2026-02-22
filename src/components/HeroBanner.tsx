@@ -34,7 +34,7 @@ const HeroBanner = () => {
                 <ReflectingButton
                   path="/contact"
                   name="Start Reflecting"
-                  className="latoclass flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100 hover:text-white hover:bg-linear-to-r hover:from-primary-100 hover:to-[#031A27]    text-[14px] lg:text-xl font-semibold rounded-full"
+                  className="latoclass group flex items-center justify-center gap-2 w-full lg:w-65 h-14 lg:h-full z-10 bg-white text-primary-100 hover:text-white hover:bg-linear-to-r hover:from-primary-100 hover:to-[#031A27]    text-[14px] lg:text-xl font-semibold rounded-full"
                 />
                 <WaitlistButton className=" flex items-center justify-center w-full lg:w-54 h-14  z-10  border-t border-t-gray-200 border-r border-r-gray-200 shadow-md hover:bg-linear-to-r hover:bg-[#FFFFFF] hover:text-primary-100     font-semibold text-[#ffffff] rounded-full" />
               </div>

@@ -40,7 +40,7 @@ async function getBlogDetails(slug: string) {
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const { slug } = await params;
   const data: blogArticleDetailProp = await getBlogDetails(slug);
-  console.log(data);
+  
 
   if (data === null) {
     return (

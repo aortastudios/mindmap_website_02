@@ -2,7 +2,6 @@ import AboutHero from "@/components/AboutHero";
 import AboutStory from "@/components/AboutStory";
 import AboutTeam from "@/components/AboutTeam";
 import Download from "@/components/Download";
-import FrequentQuestions from "@/components/FrequentQuestions";
 
 const About = () => {
   return (
@@ -10,8 +9,9 @@ const About = () => {
       <AboutHero />
       <AboutStory />
       <AboutTeam />
-      <Download/>
-      <FrequentQuestions/>
+      <div className="w-full pb-20">
+        <Download />
+      </div>
     </main>
   );
 };

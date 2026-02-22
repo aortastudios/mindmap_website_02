@@ -12,7 +12,7 @@ import { client } from "@/lib/sanity";
 import { BlogArticleCardProp } from "@/types/blogTypes";
 import Link from "next/link";
 
-// Fetch blog details
+// Fetch blog category
 async function getBlogCategory(slug: string) {
   const query = `
 *[_type == 'blog' && category == "${slug}"]{

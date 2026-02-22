@@ -13,11 +13,11 @@ const Footer = () => {
   const isWaitList = pathName.includes("/waitlist");
   return (
     <footer
-      className={` ${isWaitList ? "hidden" : "w-full h-full  footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden"}`}
+      className={` ${isWaitList ? "hidden" : "w-full h-full   border-l border-l-[#f4f4f4] footer rounded-br-[20px] lg:rounded-br-none rounded-bl-[20px] lg:rounded-bl-none overflow-hidden"}`}
     >
       {/* desktop */}
       <div
-        className="relative w-full  h-150 mx-auto 
+        className="relative w-full  h-215.5 mx-auto 
                       bg-[#000000] hidden lg:block"
       >
         {/* Overlay for the dark background on 27% width */}
@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Content sits above both backgrounds */}
         <Container>
-          <div className="lg:w-160 h-42 pt-10 lg:pt-15 text-white z-10 relative ">
+          <div className="lg:w-160 h-42 pt-10 lg:pt-30 text-white z-10 relative ">
             <h3 className="font-medium text-[14px] lg:text-[16px] latoclass">
               Get Early Access
             </h3>
@@ -39,8 +39,8 @@ const Footer = () => {
             />
           </div>
           {/* Logo and links */}
-          <div className=" h-153 lg:h-80 w-full absolute left-0 right-0 bottom-0 backdrop-blur-md ">
-            <div className=" mx-auto max-w-298 ">
+          <div className=" h-153 lg:h-104 w-full absolute left-0 right-0 bottom-0 backdrop-blur-md border-t border-t-gray-600 ">
+            <div className=" mx-auto max-w-298 mt-5 ">
               <div className="flex lg:items-center  flex-col lg:flex-row">
                 <div className="w-full flex-1">
                   <div className=" flex-1 flex items-center gap-2 mt-5">
@@ -56,7 +56,7 @@ const Footer = () => {
                     </span>
                   </div>
                   <p className="lg:w-155.5 text-[16px] lg:text-[20px] font-[400px] pr-4 lg:pr-0 lg:text-white text-[#FFFFFF]/70">
-                    A calm space to reflect, journal, and understand your mind,
+                    A calm space to reflect, journal, and understand your mind -
                     one entry at a time.
                   </p>
                   {/* social media icons */}
@@ -77,11 +77,11 @@ const Footer = () => {
                   <div className="flex w-full gap-4 pt-6 lg:pt-0 ">
                     <div className="flex-1 hidden lg:block"></div>
                     <div className="flex-1 pt-5">
-                      <h4 className="text-[16px] text-[#535353] font-medium">
+                      <h4 className="text-[16px] text-[#535353] font-medium pl-2">
                         Resources
                       </h4>
                       <div className="mt-5">
-                        <ul className="flex flex-col justify-center gap-3 ">
+                        <ul className="flex flex-col justify-center gap-5 ">
                           {resources.map((link) => {
                             const active = isActive(link.path);
                             return (
@@ -105,11 +105,11 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className="flex-1 pt-5 lg:pr-10">
-                      <h4 className="text-[16px] text-[#535353] font-medium">
+                      <h4 className="text-[16px] text-[#535353] font-medium pl-1">
                         Company
                       </h4>
                       <div className="mt-5">
-                        <ul className="flex flex-col justify-center gap-3 ">
+                        <ul className="flex flex-col justify-center gap-5 ">
                           {company.map((link) => {
                             const active = isActive(link.path);
 
@@ -138,7 +138,7 @@ const Footer = () => {
               </div>
             </div>
             {/* for desktop */}
-            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 mt-2 mb-1 hidden lg:block "></div>
+            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 mt-20 mb-1 hidden lg:block "></div>
             {/* for mobile */}
             <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-6 lg:hidden "></div>
 

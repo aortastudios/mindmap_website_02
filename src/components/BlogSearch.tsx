@@ -13,7 +13,7 @@ const BlogSearch = () => {
           <p className="text-[14px] lg:text-[22px]  font-[400px] lg:font-medium leading-5 lg:leading-8">
             Mindful blog. Browse hundreds of articles designed to educate and
             inspire. Whatever your mood or goal, feel free to explore our expert
-            articles on meditation, wellness, and mental health
+            articles on meditation, wellness, and mental health.
           </p>
         </div>
         <div className="mt-10 ">

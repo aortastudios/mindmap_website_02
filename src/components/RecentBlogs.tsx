@@ -38,7 +38,7 @@ const RecentBlogs = async () => {
         <h1 className="latoclass font-semibold text-[24px] text-[#1A1A1A] mb-5">
           Recent blog posts
         </h1>
-        <div className="w-full h-full flex flex-col lg:flex-row gap-4">
+        <div className="w-full h-full flex flex-col lg:flex-row gap-4 lg:gap-6">
           {/* subscription section */}
           <NewsLetter />
           {/* right side with blog cards */}

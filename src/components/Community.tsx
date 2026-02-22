@@ -114,7 +114,7 @@ const Community = () => {
                     width={350}
                     height={500}
                     alt="community_banner"
-                    className="w-216 h-162.5 object-cover mx-auto"
+                    className="w-216 h-162.5 object-cover sm:object-contain mx-auto"
                   />
                 ))}
               </div>

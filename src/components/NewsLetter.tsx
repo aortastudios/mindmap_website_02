@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetter = () => {
   return (
     <div className="w-full lg:w-[30%] h-66 bg-white rounded-[30px] flex items-center justify-center">
-      <div className=" w-[95%] h-[95%]  p-5">
+      <form className=" w-[95%] h-[95%]  p-5">
         <h3 className="text-base lg:text-[18px] font-semibold text-[#B2B2B2]">
           Join the <span className="text-primary-200">Newsletter</span>
         </h3>
@@ -25,7 +25,7 @@ const NewsLetter = () => {
             Subscribe
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
