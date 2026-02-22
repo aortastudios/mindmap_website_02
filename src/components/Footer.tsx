@@ -178,7 +178,7 @@ const Footer = () => {
       </div>
       {/* mobile */}
       <div
-        className="relative w-full  h-170 mx-auto  lg:hidden block
+        className="relative w-full  h-218.5 mx-auto  lg:hidden block
                       bg-[url('/images/footer.png')] bg-cover bg-no-repeat"
       >
         {/* Overlay for the dark background on 27% width */}
@@ -186,7 +186,7 @@ const Footer = () => {
 
         {/* Content sits above both backgrounds */}
         <Container>
-          <div className="lg:w-160 h-20 pt-5 lg:pt-29.5 text-white z-10 relative ">
+          <div className="lg:w-160 h-20 pt-5 lg:pt-29.5 text-white z-10 relative pt-10 ">
             <h3 className="font-medium text-[14px] lg:text-[16px] latoclass">
               Get Early Access
             </h3>
@@ -200,11 +200,11 @@ const Footer = () => {
             />
           </div>
           {/* Logo and links */}
-          <div className=" h-120 lg:h-104 w-full absolute left-0 right-0 bottom-0 backdrop-blur-md pb-5">
+          <div className=" h-152.75 w-full absolute left-0 right-0 bottom-0 backdrop-blur-md pb-5 border-[0.5px] border-gray-400">
             <div className="max-w-360 mx-auto pl-5 xl:pl-34 ">
-              <div className="flex lg:items-center  flex-col lg:flex-row">
+              <div className="flex lg:items-center  flex-col lg:flex-row mt-10">
                 <div className="w-full flex-1">
-                  <div className=" flex-1 flex items-center gap-2 mt-5">
+                  <div className=" flex-1 flex items-center gap-2 mt-3">
                     <Image
                       src={"/icons/logo.png"}
                       width={40}
@@ -221,7 +221,7 @@ const Footer = () => {
                     one entry at a time.
                   </p>
                   {/* social media icons */}
-                  <div className="pt-4 ">
+                  <div className="pt-4 mt-5 ">
                     <ul className="flex items-center gap-3">
                       {socialLink.map((link, index) => (
                         <Socials
@@ -234,11 +234,11 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="flex-1 flex  text-white  ">
+                <div className="flex-1 flex  text-white  mt-10 ">
                   <div className="flex w-full gap-4 pt-2 lg:pt-0 ">
                     <div className="flex-1 hidden lg:block"></div>
                     <div className="flex-1 pt-5">
-                      <h4 className="text-[16px] text-[#535353] font-medium">
+                      <h4 className="text-[16px] text-[#535353] font-medium pl-1">
                         Resources
                       </h4>
                       <div className="mt-2">
@@ -266,7 +266,7 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className="flex-1 pt-5 lg:pr-10">
-                      <h4 className="text-[16px] text-[#535353] font-medium">
+                      <h4 className="text-[16px] text-[#535353] font-medium pl-1">
                         Company
                       </h4>
                       <div className="mt-2">
@@ -298,10 +298,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            {/* for desktop */}
-            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 my-12 hidden lg:block "></div>
             {/* for mobile */}
-            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 mt-2 mb-1 lg:hidden "></div>
+            <div className=" h-px max-w-298 mx-auto w-[90%] lg:w-auto bg-white/20 mt-5 mb-10 lg:hidden "></div>
 
             <div className="lg:hidden w-[90%] lg:w-auto  max-w-298 mx-auto  ">
               <div className="mt-5">
@@ -316,24 +314,6 @@ const Footer = () => {
               <p className="text-[12px] font-normal text-white/70 text-center pb-5">
                 © {new Date().getFullYear()} MindMap. All rights reserved.
               </p>
-            </div>
-            {/* for desktop */}
-            <div className=" h-px max-w-298 mx-auto bg-white/20 mt-10  hidden lg:block"></div>
-            <div className="text-white hidden lg:flex max-w-298 mx-auto w-[90%] lg:w-auto mt-1  items-center justify-between">
-              <div className="">
-                <p className="text-[18px] font-normal text-white/70 ">
-                  © {new Date().getFullYear()} MindMap. All rights reserved.
-                </p>
-              </div>
-              <div className="">
-                <ul className="flex items-center justify-center gap-2 my-3">
-                  {footerLink.map((link) => (
-                    <li key={link.name} className="text-[18px] text-white/70">
-                      <Link href={link.path}>{link.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         </Container>

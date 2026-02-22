@@ -36,11 +36,11 @@ const AboutHero = () => {
               <h1 className="text-[18px]  md:text-[40px] font-semibold py-3 ">
                 MindMap
               </h1>
-              <p className="text-[12px] md:text-[24px] py-3 ">
+              <p className="text-[12px] md:text-[24px] lg:py-3 ">
                 Mindmap is 3-fold mental health and wellness platform designed
                 to provide the 3 necessities needed for positive mental change.
               </p>
-              <p className="text-[12px] md:text-[24px] leading-4 md:leading-6.5  py-3">
+              <p className="text-[12px] md:text-[24px] leading-4 md:leading-6.5 lg:py-3">
                 Our aim is to provide a digital platform where individuals can
                 connect and interact with individuals who want to share their
                 experiences as a collective and be a bridge to connect people to

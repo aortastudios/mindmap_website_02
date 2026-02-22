@@ -52,11 +52,11 @@ const BlogCategory = async ({ params }: { params: { slug: string } }) => {
           <div className="w-full   flex flex-col  gap-3 h-full">
             {/* Upper div */}
             <div className="w-full flex gap-3 ">
-              <div className="flex-1 flex  flex-col xl:flex-row xl:items-center  gap-1 text-[22px] font-normal ">
+              <div className="flex-1 flex  items-center  gap-1 text-[12px] md:text-[22px] font-normal ">
                 <Link href={"/blog"} className="text-primary-200/60 ">
                   Articles {">"}
                 </Link>
-                <p className="text-primary-100">{cleanedSlug}</p>
+                <p className="text-primary-100 ">{cleanedSlug}</p>
               </div>
             </div>
 

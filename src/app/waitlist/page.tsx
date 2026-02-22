@@ -5,8 +5,8 @@ const WaitList = () => {
   return (
     // desktop
     <>
-      <main className="w-full  hidden  min-h-screen lg:flex items-center lg:items-start px-5 lg:px-10  justify-center lg:justify-start bg-[url('/images/mobile_hero_bg.png')] lg:bg-[url('/images/hero_bg.png')] bg-cover bg-no-repeat">
-        <div className="w-full lg:max-w-163.25 h-157.75 lg:h-216  p-5 lg:p-10 text-start flex flex-col justify-between  py-12 backdrop-blur-sm rounded-3xl my-10">
+      <main className="w-full  hidden  min-h-screen lg:flex items-center lg:items-start px-5 lg:px-10  justify-center  gap-16 bg-[url('/images/mobile_hero_bg.png')] lg:bg-[url('/images/hero_bg.png')] bg-cover bg-no-repeat">
+        <div className="w-full flex-1 lg:max-w-163.25 h-157.75 lg:h-216  p-5 lg:p-10 text-start flex flex-col justify-between  py-12 backdrop-blur-sm rounded-3xl my-10">
           {/* Logo */}
           <div className="">
             {/* desktop */}
@@ -84,6 +84,7 @@ const WaitList = () => {
             </p>
           </footer>
         </div>
+        <div className="flex-1  lg:max-w-163.25 h-full"></div>
       </main>
       {/* mobile */}
       <main className="w-full lg:hidden  min-h-screen flex items-center lg:items-start px-5 lg:px-10  justify-center lg:justify-start bg-[url('/images/mobile_hero_bg.png')] lg:bg-[url('/images/hero_bg.png')] bg-cover bg-no-repeat">

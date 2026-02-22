@@ -53,7 +53,7 @@ const HeroBanner = () => {
         <div
           className={` ${
             isMobileNavOpen ? "hidden" : "block"
-          } lg:hidden w-full backdrop-blur-md rounded-[30px] h-100   p-5 text-white  z-0   relative overflow-hidden `}
+          } lg:hidden w-full backdrop-blur-md rounded-[30px] h-100 border-r border-r-gray-50   p-5 text-white  z-0   relative overflow-hidden `}
         >
           <div className="w-35 h-60 absolute overflow-hidden -left-2.5 -bottom-11  ">
             <Image

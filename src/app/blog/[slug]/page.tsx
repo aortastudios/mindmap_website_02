@@ -64,7 +64,7 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
             {/* Upper div */}
             <div className="w-full flex gap-3 ">
               <div className="hidden xl:block w-[25%] "></div>
-              <div className="flex-1 flex  flex-col xl:flex-row xl:items-center  gap-1 text-[22px] font-normal ">
+              <div className="flex-1 flex  flex-row xl:items-center  gap-1 text-[12px] md:text-[22px] font-normal ">
                 <p className="text-primary-200/60 ">
                   <Link href={"/blog"}>Articles</Link> {">"}
                   <Link href={`/category/${data.category}`}>
@@ -80,11 +80,11 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
               {/* left side (article) */}
               {/* for desktop */}
               <div className="w-[25%]  hidden xl:block ">
-                <div className="max-w-60.75 pr-5  text-primary-200 text-lg font-normal">
+                <div className="sticky top-30 max-w-60.75 pr-5  text-primary-200 text-lg font-normal">
                   <p className="mb-12">In this article</p>
                   <p className="mb-3">{data.firstQuestion}</p>
                   <p className="mb-3">{data.secondQuestion}</p>
-                  <p className="mb-3">{data.thirdQuestion}</p>
+                  <p className="mb-3 hover:underline">{data.thirdQuestion}</p>
                 </div>
               </div>
               {/* right with articles */}
@@ -130,7 +130,7 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
                 <p className="leading-8 text-[20px] font-normal text-primary-100 mt-3">
                   {data.firstImageDescription}
                 </p>
-                <div className="my-4 leading-8 prose prose-blue prose-lg prose-headings:underline ">
+                <div className="my-4 leading-8 prose prose-blue prose-lg  ">
                   <PortableText value={data.firstContent} />
                 </div>
                 <p className="p-5 bg-primary-100/10  text-primary-100 rounded-[20px] text-base lg:text-[24px] leadin-8 font-normal my-6">
@@ -146,7 +146,7 @@ const BlogArticle = async ({ params }: { params: { slug: string } }) => {
                     className=" h-auto w-full lg:h-77 xl:h-115.5"
                   />
                 </div>
-                <div className="my-4 leading-8 prose prose-blue prose-lg prose-headings:underline ">
+                <div className="my-4 leading-8 prose prose-blue prose-lg">
                   <PortableText value={data.firstContent} />
                 </div>
               </div>
