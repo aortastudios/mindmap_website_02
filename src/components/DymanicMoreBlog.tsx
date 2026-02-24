@@ -49,7 +49,7 @@ const DynamicMoreBlog = async ({
     <div className="w-full h-full">
       <Container>
         <div className="w-full h-full">
-          <h1 className=" font-bold lg:font-semibold text-[24px] lg:text-[26px] text-primary-100 mb-5">
+          <h1 className=" font-bold lg:font-semibold text-[18px] lg:text-[26px] text-primary-100 mb-5">
             {title}
           </h1>
           <div className=" h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -32,7 +32,7 @@ const BlogSearchForm = () => {
   return (
     <form
       action={handleSearch}
-      className="max-w-294.5 h-16 flex items-center border border-primary-100 rounded-full overflow-hidden"
+      className="w-full h-16 flex items-center border border-primary-100 rounded-full overflow-hidden"
     >
       {/* Icon */}
       <div className="flex justify-center items-center w-10 h-5 lg:w-15 lg:h-10">

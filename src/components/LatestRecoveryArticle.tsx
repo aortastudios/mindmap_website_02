@@ -25,7 +25,7 @@ const LatestRecoveryArticle = ({ articles }: Props) => {
     <div className="w-full h-full  mb-10">
       <Container>
         <div className="w-full h-full">
-          <h1 className=" font-bold lg:font-semibold text-[24px] lg:text-[26px] text-primary-100 pt-10 lg:pt-0 mb-5">
+          <h1 className=" font-bold lg:font-semibold text-[18px] lg:text-[26px] text-primary-100 pt-10 lg:pt-0 mb-5">
             Latest Rest and Recovery articles
           </h1>
           <div className="w-full h-full xl:h-108  flex flex-col xl:flex-row gap-6">
