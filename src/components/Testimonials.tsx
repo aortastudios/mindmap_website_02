@@ -7,7 +7,7 @@ import ReflectingButton from "./ReflectingButton";
 const Testimonials = () => {
   const combinedTestimonials = [...dummyTestimonial1, ...dummyTestimonial2];
   return (
-    <section className=" w-full lg:max-w-360  min-h-199.5 mx-auto  lg:my-20 pt-10 ">
+    <section className=" w-full lg:max-w-screen  min-h-199.5 mx-auto  lg:my-20 pt-10 ">
       <div className="w-full lg:w-236.5  mx-auto">
         <h1 className="px-10 lg:px-0 text-center lg:text-start text-primary-100 font-bold lg:font-semibold text-[24px] lg:text-[44px] leading-tight">
           What our community members are saying
@@ -17,12 +17,13 @@ const Testimonials = () => {
           lives through therapy and holistic wellness.
         </p>
       </div>
-     
-        <div className="w-full h-full mt-20 hidden lg:block  ">
-          <TestimonialSlider testimonials={dummyTestimonial1} />
-          <TestimonialSlider testimonials={dummyTestimonial2} />
-        </div>
-         <Container>
+      {/* desktop */}
+      <div className="w-full h-full mt-20 hidden lg:block  ">
+        <TestimonialSlider testimonials={dummyTestimonial1} />
+        <TestimonialSlider testimonials={dummyTestimonial2} />
+      </div>
+      {/* mobile */}
+      <Container>
         <div className="lg:hidden block mt-10">
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
             {combinedTestimonials.map((testimonial) => (

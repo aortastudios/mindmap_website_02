@@ -68,7 +68,7 @@ const TestimonialSlider = ({
   }, []);
 
   return (
-    <div className="max-w-360 w-full overflow-y-hidden my-6">
+    <div className="max-w-screen w-full overflow-y-hidden my-6">
       <div
         ref={scrollRef}
         className="w-full overflow-hidden scroll-smooth cursor-grab select-none"
