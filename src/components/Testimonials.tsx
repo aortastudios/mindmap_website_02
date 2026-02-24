@@ -26,7 +26,7 @@ const Testimonials = () => {
       <Container>
         <div className="lg:hidden block mt-10">
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {combinedTestimonials.map((testimonial) => (
+            {combinedTestimonials.slice(0, 5).map((testimonial) => (
               <div key={testimonial.id} className="mb-6">
                 <TestimonialCard
                   src={testimonial.src}
