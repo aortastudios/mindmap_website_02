@@ -54,9 +54,9 @@ const Community = () => {
               {currentSlide > 0 && (
                 <button
                   onClick={prevSlide}
-                  className="absolute top-1/2 left-[4%] h-13.5 w-13.5 bg-primary-100 flex items-center justify-center rounded-full"
+                  className="absolute top-1/2 left-[4%] h-13.5 w-13.5 bg-white flex items-center justify-center rounded-full"
                 >
-                  <FaArrowLeftLong className="text-white w-5 h-[14.12px]" />
+                  <FaArrowLeftLong className="text-primary-100 w-5 h-[14.12px]" />
                 </button>
               )}
 
@@ -100,13 +100,13 @@ const Community = () => {
               {currentSlider > 0 && (
                 <button
                   onClick={prevSlider}
-                  className="absolute top-1/2 left-0 w-7.5 h-7.5 bg-primary-100 flex items-center justify-center rounded-full"
+                  className="absolute top-1/2 left-0 w-7.5 h-7.5 bg-white flex items-center justify-center rounded-full"
                 >
-                  <FaArrowLeftLong className="text-white w-2.25 h-1.75" />
+                  <FaArrowLeftLong className="text-primary-100 w-2.25 h-1.75" />
                 </button>
               )}
 
-              <div>
+              <div className="mt-3">
                 {images2.map((src, index) => (
                   <Image
                     key={index}
@@ -114,7 +114,7 @@ const Community = () => {
                     width={350}
                     height={500}
                     alt="community_banner"
-                    className="w-216 h-162.5 object-cover sm:object-contain mx-auto"
+                    className="w-216 h-162.5 object-contain mx-auto"
                   />
                 ))}
               </div>
