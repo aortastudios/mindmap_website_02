@@ -18,17 +18,17 @@ const DynamicMentalState = ({ categories }: { categories: string[] }) => {
             href={`/category/${category}`}
             src={
               category === "Cognitive Wellness"
-                ? "/images/cognitive1.png"
+                ? "/images/cogsvg1.svg"
                 : category === "Emotional Regulation"
-                  ? "/images/regulation1.png"
-                  : "/images/rest1.png"
+                  ? "/images/regsvg1.svg"
+                  : "/images/restsvg1.svg"
             }
             src2={
               category === "Cognitive Wellness"
-                ? "/images/cognitive2.png"
+                ? "/images/cogsvg2.svg"
                 : category === "Emotional Regulation"
-                  ? "/images/regulation2.png"
-                  : "/images/rest2.png"
+                  ? "/images/regsvg2.svg"
+                  : "/images/restsvg2.svg"
             }
             text={category}
           />

@@ -5,17 +5,18 @@ import MentalStateCard from "./MentalStateCard";
 
 const MentalStates = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between gap-4 mt-10 ">
+    <div className="flex flex-col lg:flex-row justify-between gap-4 mt-10 w-full ">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false }}
+        className="w-full"
       >
         <MentalStateCard
           href="/category/Cognitive Wellness"
-          src="/images/cognitive1.png"
-          src2="/images/cognitive2.png"
+          src="/images/cogsvg1.svg"
+          src2="/images/cogsvg2.svg"
           text="Cognitive Wellness"
         />
       </motion.div>
@@ -25,11 +26,12 @@ const MentalStates = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false }}
+        className="w-full"
       >
         <MentalStateCard
           href="/category/Emotional Regulation"
-          src="/images/regulation1.png"
-          src2="/images/regulation2.png"
+          src="/images/regsvg1.svg"
+          src2="/images/regsvg2.svg"
           text="Emotional Regulation"
         />
       </motion.div>
@@ -39,11 +41,12 @@ const MentalStates = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false }}
+        className="w-full"
       >
         <MentalStateCard
           href="/category/Rest and Recovery"
-          src="/images/rest1.png"
-          src2="/images/rest2.png"
+          src="/images/restsvg1.svg"
+          src2="/images/restsvg2.svg"
           text="Rest and Recovery"
         />
       </motion.div>
